@@ -1,0 +1,1371 @@
+
+
+<!DOCTYPE html>
+<!--
+  ___ __  __   _   ___ _____ ___  ___ _  _  ___   ___  _
+ / __|  \/  | /_\ | _ \_   _/ __|/ __| || |/ _ \ / _ \| |
+ \__ \ |\/| |/ _ \|   / | | \__ \ (__| __ | (_) | (_) | |__
+ |___/_|  |_/_/ \_\_|_\ |_| |___/\___|_||_|\___/ \___/|____|
+
+Did you know you can get paid to read other people's code?
+
+We're looking for PHP developers.
+Join us: https://www.smartschool.be/jobs
+-->
+<html>
+    <head>
+                    <title>Technische Scholen Mechelen - Smartschool</title>
+            <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+                            <link rel="icon" href="https://static2.smart-school.net/smsc/svg/favicon/favicon.svg">
+                <link rel="mask-icon" href="https://static4.smart-school.net/smsc/svg/favicon/mask-icon.svg" color="#ff520e">
+                <link rel="apple-touch-icon" href="https://static4.smart-school.net/smsc/img/favicon/apple-touch-icon.png">
+                <link rel="manifest" href="/manifest.json">
+                                                                    
+                
+        <!-- jQuery & jQueryUI -->
+                    <script type="text/javascript" src="https://static2.smart-school.net/smsc/resources/jquery/2.1.4/jquery.min.rev-d59ef08dc7.js"></script>
+    
+                    <script type="text/javascript" src="https://static6.smart-school.net/smsc/resources/jqueryui/1.12.1/jquery-ui.min.rev-8bda777c73.js"></script>
+    
+                    <link href="https://static4.smart-school.net/smsc/resources/jqueryui/1.12.1/jquery-ui.min.rev-efcb6e34f3.css" rel="stylesheet" />
+    
+
+                                                <link href="https://static6.smart-school.net/production/Topnav/main.rev-0f463168a9.css" rel="stylesheet" />
+    
+                    
+                            <link href="https://static6.smart-school.net/modules/Agenda/dist/main-built.rev-46b9a9e311.css" rel="stylesheet" />
+            <link href="https://static2.smart-school.net/modules/Agenda/desktop/main/dist/main-built.rev-ea3e2c498d.css" rel="stylesheet" />
+    
+            
+                        <!-- TinyMCE HEAD -->
+                                    <!-- javascriptContent HEAD -->
+        <!-- javascriptURL HEAD -->
+                                <script type="text/javascript" src="https://static4.smart-school.net/smsc/resources/jqueryui/langs/jquery.ui.datepicker-nl-BE.min.rev-5e2caa14c6.js"></script>
+            <script type="text/javascript" src="https://static2.smart-school.net/smsc/resources/modernizr/modernizr.custom.authentication_flexbox.rev-e7fadbf800.js"></script>
+    
+                <!-- javascriptContent HEAD -->
+                        
+                    </head>
+    <body class=" ">
+                                    <a href="javascript://" class="skip-link js-skip-link">Spring naar hoofdcontent</a>
+<div id="topnavMenuOverlay" class="topnav-menu-overlay" hidden></div>
+<header id="smscTopContainer" class="smsc-topnav">
+  <nav class="topnav">
+    <div data-profile class="topnav__btn-wrapper">
+        <button class="js-btn-profile topnav__btn topnav__btn--profile">
+            <img src="https://userpicture20.smartschool.be/User/Userimage/hashimage/hash/3691_92615275-f35d-429d-bcaf-51307c0da4de/plain/1/res/48" alt="Profiel afbeelding"/>
+            <div class="hlp-vert-box">
+                <span>Daan Verstreken</span>
+                <span class="topnav__btn__light"></span>
+            </div>
+            <div class="topnav__menu-arrow" aria-hidden="true"></div>
+        </button>
+        <div id="profileMenu" class="topnav__menu-wrapper" tabindex="-1" hidden>
+            <div class="topnav__menu">
+                <a href="/index.php?module=Profile" class="topnav__menuitem topnav__menuitem--img" role="menuitem">
+                    <img src="https://userpicture20.smartschool.be/User/Userimage/hashimage/hash/3691_92615275-f35d-429d-bcaf-51307c0da4de/plain/1/res/48" alt="Profiel afbeelding"/>
+                    <span>Profiel</span>
+                </a>
+                <a href="/Profile/Notify" class="topnav__menuitem topnav__menuitem--icon topnav__menuitem--icon--notifs" role="menuitem">Instellingen berichtgeving</a>
+                <ul class="profile-blocks js-profile-blocks"></ul>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    <a href="/" class="js-btn-home topnav__btn topnav__btn--push-right">Start</a>
+
+    <div data-shortcuts class="topnav__btn-wrapper">
+        <button class="js-btn-shortcuts topnav__btn">
+          Ga naar
+          <div class="topnav__menu-arrow" aria-hidden="true"></div>
+        </button>
+        <div id="shortcutsMenu" class="topnav__menu-wrapper" tabindex="-1" hidden>
+          <div class="topnav__menu topnav__menu--shortcuts js-shortcuts-container js-autosize">
+                  
+    <a href="/index.php?module=Messages&amp;file=index&amp;function=main"
+       class="topnav__menuitem topnav__menuitem--icon module-messages--24"
+       role="menuitem"       title="Berichten">
+        Berichten
+    </a>
+                        
+    <a href="/index.php?module=Survey&amp;file=index&amp;function=main&amp;courseID=0"
+       class="topnav__menuitem topnav__menuitem--icon module-survey--24"
+       role="menuitem"       title="Enquête">
+        Enquête
+    </a>
+                        
+    <a href="/index.php?module=Forum&amp;file=index&amp;function=main"
+       class="topnav__menuitem topnav__menuitem--icon module-forum--24"
+       role="menuitem"       title="Forum">
+        Forum
+    </a>
+                        
+    <a href="/index.php?module=Photos&amp;file=index&amp;function=main&amp;courseID=0"
+       class="topnav__menuitem topnav__menuitem--icon module-photos--24"
+       role="menuitem"       title="Fotoalbum">
+        Fotoalbum
+    </a>
+                        
+    <a href="/intradesk"
+       class="topnav__menuitem topnav__menuitem--icon module-intradesk--24"
+       role="menuitem"       title="Intradesk">
+        Intradesk
+    </a>
+                        
+    <a href="/index.php?module=LVS&amp;file=index&amp;function=main"
+       class="topnav__menuitem topnav__menuitem--icon module-lvs--24"
+       role="menuitem"       title="Leerlingvolgsysteem">
+        Leerlingvolgsysteem
+    </a>
+                        
+    <a href="/mydoc"
+       class="topnav__menuitem topnav__menuitem--icon module-mydoc--24"
+       role="menuitem"       title="Mijn documenten">
+        Mijn documenten
+    </a>
+                        
+    <a href="/Studentcard"
+       class="topnav__menuitem topnav__menuitem--icon module-studentcard--24"
+       role="menuitem"       title="Mijn leerlingfiche">
+        Mijn leerlingfiche
+    </a>
+                        
+    <a href="/index.php?module=News&amp;file=index"
+       class="topnav__menuitem topnav__menuitem--icon module-news--24"
+       role="menuitem"       title="Nieuwsberichten">
+        Nieuwsberichten
+    </a>
+                        
+    <a href="/online-session"
+       class="topnav__menuitem topnav__menuitem--icon module-onlinesession--24"
+       role="menuitem"       title="Online sessies">
+        Online sessies
+    </a>
+                        
+    <a href="/index.php?module=Portfolio&amp;file=index&amp;function=main"
+       class="topnav__menuitem topnav__menuitem--icon module-portfolio--24"
+       role="menuitem"       title="Portfolio">
+        Portfolio
+    </a>
+                        
+    <a href="/results"
+       class="topnav__menuitem topnav__menuitem--icon module-results--24"
+       role="menuitem"       title="Resultaten">
+        Resultaten
+    </a>
+                        
+    <a href="/index.php?module=Agenda"
+       class="topnav__menuitem topnav__menuitem--icon module-agenda--24"
+       role="menuitem"       title="Schoolagenda">
+        Schoolagenda
+    </a>
+                        
+    <a href="/index.php?module=Wiki"
+       class="topnav__menuitem topnav__menuitem--icon module-wiki--24"
+       role="menuitem"       title="Wiki">
+        Wiki
+    </a>
+                                <hr class="menu-divider"/>
+            
+    <a href="/index.php?module=Manual&amp;file=manual&amp;function=main"
+       class="topnav__menuitem topnav__menuitem--icon module-manual--24"
+       role="menuitem"       title="Handleiding">
+        Handleiding
+    </a>
+                                <hr class="menu-divider"/>
+            
+    <a href="https://www.diddit.be/login?smartschoolPlatform=tsm"
+       class="topnav__menuitem topnav__menuitem--icon partner-diddit--24"
+       role="menuitem" target="_blank"       title="diddit">
+        diddit
+    </a>
+                        
+    <a href="https://digitalemethode.be/nl-be/sso?subdomain=tsm"
+       class="topnav__menuitem topnav__menuitem--icon partner-signpost-digtale-methode--24"
+       role="menuitem" target="_blank"       title="Digitale Methode">
+        Digitale Methode
+    </a>
+                        
+    <a href="https://www.disco-averbode.be/login/smartschool?platform=tsm"
+       class="topnav__menuitem topnav__menuitem--icon partner-averbode-disco--24"
+       role="menuitem" target="_blank"       title="Disco">
+        Disco
+    </a>
+                        
+    <a href=" https://platform.ftrprf.be/"
+       class="topnav__menuitem topnav__menuitem--icon partner-ftrprf--24"
+       role="menuitem" target="_blank"       title="FTRPRF">
+        FTRPRF
+    </a>
+                        
+    <a href="https://myway.i-learn.be/login?smartschoolPlatform=tsm"
+       class="topnav__menuitem topnav__menuitem--icon partner-ilearn--24"
+       role="menuitem" target="_blank"       title="i-Learn">
+        i-Learn
+    </a>
+                        
+    <a href="/Partner/VRT/KLAAR"
+       class="topnav__menuitem topnav__menuitem--icon partner-vrtklaar--24"
+       role="menuitem" target="_blank"       title="KLAAR">
+        KLAAR
+    </a>
+                        
+    <a href="https://www.pelckmansportaal.be"
+       class="topnav__menuitem topnav__menuitem--icon partner-pelckmans--24"
+       role="menuitem" target="_blank"       title="Pelckmans Portaal">
+        Pelckmans Portaal
+    </a>
+                        
+    <a href="https://api.polpo.be/auth/smartschool-login/https%3A%2F%2Fwww.polpo.be%2Fplatform%2F?type=student&amp;platform=tsm"
+       class="topnav__menuitem topnav__menuitem--icon partner-polpo--24"
+       role="menuitem" target="_blank"       title="POLPO">
+        POLPO
+    </a>
+                        
+    <a href="https://www.scoodle.be/Aanmelden/External?Provider=Smartschool&amp;Platform=tsm.smartschool.be"
+       class="topnav__menuitem topnav__menuitem--icon partner-scoodle--24"
+       role="menuitem" target="_blank"       title="Scoodle">
+        Scoodle
+    </a>
+
+          </div>
+        </div>
+    </div>
+
+    <div data-courses class="topnav__btn-wrapper">
+        <button class="js-btn-courses topnav__btn">
+            Vakken
+        </button>
+    </div>
+
+    
+        <a href="/index.php?module=Messages&file=index&function=main" class="js-btn-messages topnav__btn">Berichten
+        <span class="js-badge-msg topnav__badge" role="status" aria-label="0 ongelezen berichten" aria-live="polite" aria-relevant="additions" hidden>0</span>
+    </a>
+    
+    <div data-notifs class="topnav__btn-wrapper">
+        <button class="js-btn-notifs topnav__btn">Meldingen
+            <span class="js-badge-notifs topnav__badge" role="status" aria-label="0 ongelezen meldingen" aria-live="polite" aria-relevant="additions" hidden>0</span>
+        </button>
+    </div>
+      
+    <div data-search class="topnav__btn-wrapper">
+        <button class="js-btn-search topnav__btn topnav__btn--icon topnav__btn--icon--search" newIntradeskEnabled="" title="Zoeken"></button>
+    </div>
+    <a href="/index.php?module=Manual&file=manual&function=main" class="js-btn-manual topnav__btn topnav__btn--icon topnav__btn--icon--manual" title="Handleiding"></a>
+    <a href="/logout" class="js-btn-logout topnav__btn topnav__btn--icon topnav__btn--icon--exit" title="Afmelden"></a>
+  
+  </nav>
+    
+</header>
+
+                    		<div id="smscMain" class="smscMain " tabindex="-1">
+			    <div id='agenda_main' class='cf margin-top--milli'>
+	<div class="invalidHours" id="invalidHours">
+		<div class="title">De Schoolagenda kan niet worden geladen.</div>
+
+		<div class="message">Er zijn nog geen schooluren aangeduid waardoor de schoolagenda niet kan worden gestart.</div>
+		<div class="back" onclick="window.location = 'index.php';"></div>
+	</div>
+	<input id="gridType" type="hidden" value="2">
+	<input id="checkFloatingItems" type="hidden" value="0">
+
+	<div class="navigationContainer" id="navigationContainer">
+		<table width="100%">
+			<tr>
+				<td width="12%" align="left">
+					<div class="navPrev" id="navPrevOuter" onclick="oGrid.navPrev(this);" title="Vorige"></div><input navigation="fast" id="navPrev" class="navPrevInput" />
+				</td>
+				<td width="76%" align="center">
+					<div class="navTitle" id="navTitle"></div>
+				</td>
+				<td width="12%" align="right">
+					<div class="navNext" id="navNextOuter" onclick="oGrid.navNext(this);" title="Volgende"></div><input navigation="fast" id="navNext" class="navNextInput" style="z-index:99;" />
+				</td>
+			</tr>
+		</table>
+		<div class="ypSpacer"></div>
+	</div>
+	<div class="menuContainer" id="menuContainer">
+		<div>
+			<div class="border left topl"></div>
+			<div id="menuContainerTop" class="border centery topy"></div>
+		</div>
+		<div>
+			<div id="menuContainerTotal" class="border centerxy">
+				<div id="menuContainerContent">
+					<div class="menuButton" id="todayNav" onclick="oGrid.navToday(this);" title="Vandaag"></div>
+					<div class="menuButton" id="nextNav" onclick="oGrid.navNext(this);" title="Volgende"></div>
+					<div class="menuButton" id="prevNav" onclick="oGrid.navPrev(this);" title="Vorige"></div>
+					<div class="menuSpacer"></div>
+					<div class="menuButton" id="dayView" onclick="oGrid.selectGrid(0);" title="Dagweergave"></div>
+					<div class="menuButton" id="threeDayView" onclick="oGrid.selectGrid(1);" title="Driedagenweergave"></div>
+					<div class="menuButton" id="weekView" onclick="oGrid.selectGrid(2);" title="Weekweergave"></div>
+					<div class="menuButton" id="listView" onclick="oGrid.selectGrid(3);" title="Lijstweergave"></div>
+					<div class="menuButton" id="materialView" onclick="oGrid.selectGrid(4);" title="Lesmateriaal"></div>
+					<div class="menuSpacer"></div>
+					<!-- BEGIN filter -->
+					<div class="menuButton" id="changeViewOptions5" onclick="oFilter.showFilter();" title="Bekijk de uurroosters van andere leerkrachten, klassen of lokalen."></div>
+					<!-- END filter -->
+					
+					<!-- BEGIN pdf -->
+					<div class="menuButton" id="print" title="Agenda afdrukken" onclick="oPrint.showPrintForm();"></div>
+					<!-- <div class="menuButton" id="print" title="Agenda afdrukken"></div>-->
+					<!-- END pdf -->
+					<div class="menuButton" id="export" title="Exporteer schoolagenda" onclick="oAgenda.showExportDialog();"></div>
+					<div class="menuSpacer"></div>
+					
+					<!-- BEGIN alert -->
+					<div class="menuButton" id="changeViewOptions7" onclick="oAlert.showAlert(this);" title="Ontkoppelde taken en toetsen"></div>
+					<!-- END alert -->
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="border left bottoml center"></div>
+			<div id="menuContainerBottom" class="border centery bottomy center"></div>
+		</div>
+	</div>
+	<div class="leftContainer">
+		<div>
+			<div class="border left topl"></div>
+			<div id="contentContainerTop" class="border centery topy">
+
+			</div>
+			<div class="border right topr"></div>
+		</div>
+		<div>
+			<div id="contentContainerTotal" class="border centerxy">
+				<div style="margin-top:-10px;" id="contentContainer"></div>
+			</div>
+		</div>
+		<div>
+			<div class="border left bottoml center"></div>
+			<div id="contentContainerBottom" class="border centery bottomy center"></div>
+			<div class="border right bottomr center"></div>
+		</div>
+	</div>
+	<div class="rightContainer" style="margin-left:5px;" id='rightControl'>
+		<div>
+			<div class="border left topl"></div>
+			<div id="rightContainerTop" class="border centery topy" style="widht:285px;"></div>
+			<div class="border right topr"></div>
+		</div>
+		<div>
+			<div id="rightContainerTotal" class="border centerxy">
+				<div class="listView">
+					<div class="selectionContainer" style="overflow-x:hidden; overflow-y:hidden; margin-top:-10px;" id="rightContainer">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="border left bottoml center"></div>
+			<div id="rightContainerBottom" class="border centery bottomy center"></div>
+			<div class="border right bottomr center"></div>
+		</div>
+	</div>
+	<div id="lessonFormList" class="lessonFormList hide">
+		<div id="lessonFormListContent"></div>
+	</div>
+	<div id="assignmentInfo" class="assignmentInfo" onmouseout="hideAssignmentInfo();" onmouseover="resetAssignmentInfoTimeout();">
+		<div id="assignmentInfoContent" class="assignmentInfoContent"></div>
+	</div>
+
+	<div id="freeDeadlines" class="freeDeadlines">
+		<div class="freeDeadlinesClose" onclick="oAgenda.cancelFreeDeadlines();"></div>
+
+		<div class="navigationContainerMini" style="z-index:100;">
+			<div class="navPrevMini" id="navPrevOuterMini" onclick="oGrid.navPrev(this);" title="{_Ptpl_blockREV_LABEL}"></div><input id="navPrevMini" class="navPrevInputMini" />
+			<div class="navNextMini" id="navNextOuterMini" onclick="oGrid.navNext(this);" title="Volgende"></div><input id="navNextMini" class="navNextInputMini" style="z-index:99;" />
+		</div>
+
+		<div class="freeDeadlinesContentOuter">
+			<div id="freeDeadlinesContent" class="freeDeadlinesContent"></div>
+		</div>
+	</div>
+
+	<div catch="1" id="assignmentStudents" class="assignmentStudents">
+		<div catch="1" class="assignmentStudentsHeader">Selecteer de leerlingen waarvoor dit van toepassing is.</div>
+		<div catch="1" class="assignmentStudentsClose" onclick="oAgenda.cancelAssignmentStudents();"></div>
+		<div catch="1" class="assignmentStudentsCheck" onclick="oAgenda.checkAllAssignmentStudents();" id="assignmentStudentsCheck" status="0" title="Selecteer/deselecteer alle leerlingen"></div>
+		<div catch="1" id="assignmentStudentsContent" class="assignmentStudentsContent"></div>
+		<div catch="1" class="formAssignmentStudentsFilterInfo" id="formAssignmentStudentsFilterInfo"></div>
+		<div catch="1" class="formAssignmentStudentsSaveButton" onclick="setInVisible('assignmentStudents'); oAgenda.composeAssignmentStudentsString();">
+			<button catch="1" class="smscButton" style="min-width:65px;">Bevestig</button>
+		</div>
+	</div>
+
+
+	<div id="dialog" title=""></div>
+	<div id="dialog2" title=""></div>
+	<div id="dialog3" title=""></div>
+	<div id="dialog4" title=""></div>
+	<div id="dialog5" title=""></div>
+	<div id="dialog6" title=""></div>
+	<div id="momentInfo" class="momentInfo">
+		<div class="momentInfoClose" onclick="oAgenda.momentInfoClose();"></div>
+		<div id="momentInfoContent" class="momentInfoContent"></div>
+	</div>
+
+	<div id="lessonFormWindow" style="width:809px;height:550px; position:absolute; top:0; left:0;" class="gradient_window" style="overflow: visible;" useTrans="1" useFading="1" movable="1" scalable="0">
+	
+	<div id="lessonFormWindow_movableDiv">
+		<div class="wborder wbleft wtopl"></div>
+		<div class="wborder wcentery wtopy usernoselectmoz" style="width:769px" id="lessonFormWindow_titlebar" Unselectable="on">
+			<div class="window_leftTitle" id="lessonFormWindow_title"></div>
+			<div class="window_rightButton" id="lessonFormWindow_closeButton" onclick=""></div>
+		</div>
+		<div class="wborder wbright wtopr"></div>
+	</div>
+	<div>
+		<div class="wborder wleftxy" style="height:490px;" id="lessonFormWindow_leftBorder"></div>
+		<div id='lessonFormWindow_contentDiv' class="wborder wcenterxy_r" style='width:795px; height:490px; color:#;'>
+			<div id='lessonFormWindow_content' class="gradient_window_content"><div class="lessonFormTitleContainer">
+	<div class="lessonFormTitleContainer" id="lessonFormSubTitle"></div>
+</div>
+
+<div class="tabs" unselectable="on">
+	<ul>
+		<li id="lessonFormSubjectTab" class="current" onclick="oAgenda.changeTab(0);">
+			<span unselectable="on">Lesonderwerp</span>
+		</li>
+ 		<li id="lessonFormMaterialTab" onclick="oAgenda.changeTab(7);">
+			<span unselectable="on">Lesmateriaal</span>
+		</li>
+		<li id="lessonFormAssignmentTab" onclick="oAgenda.changeTab(1);">
+			<span unselectable="on">Taken en toetsen</span>
+		</li>
+		<li id="lessonFormFilterTab" onclick="oAgenda.changeTab(3);">
+			<span unselectable="on">Filter</span>
+		</li>
+		<li id="lessonFormYearplanTab" class="disabled" onclick="" view="0">
+			<span unselectable="on">Jaarplan</span>
+		</li>
+		<li id="lessonFormReservationsTab" onclick="oAgenda.changeTab(4);">
+			<span unselectable="on">Reserveringen</span>
+		</li>
+		<li id="lessonFormActionsTab" onclick="oAgenda.changeTab(5);">
+			<span unselectable="on">Acties</span>
+		</li>
+		<li id="lessonFormColorTab" onclick="oAgenda.changeTab(6);">
+			<span unselectable="on">Weergave</span>
+		</li>
+	</ul>
+</div>
+<div class="ypSpacer"></div>
+
+<div id="lessonFormContainer">
+	<div class="tabContainer" id="subjectTab">
+		<div class="split subjects">
+			<div class="splitTitle subjects">Lesonderwerp</div>
+			<div class="splitCopy" id="splitCopySubject" onclick="oAgenda.toggleSubjectNoteCopy(this, false, false);" type="subject">Vul hetzelfde lesonderwerp voor alle klassen in.</div>
+			<div id="subjectColumn"></div>
+			<div class="splitMessage clean">
+				<button id="scoodlePlayButton" class="scoodlePlayButton hidden">Presenteer Scoodle lesfiche</button>
+				<div id="scoodleFicheDialog" class="hidden"></div>
+			</div>
+			
+			
+			
+			<div class="splitNextLesson" id="splitSubjectNextLesson" onclick="oAgenda.toggleNextLesson(this);" status="0">
+				Kopieer dit lesonderwerp naar
+			</div>
+			<div style="float:left; margin-top: 4px;">
+				<div id="subjectNextLessonType" class="cf" name="smscselectSubject"></div>
+			</div>
+		</div>
+		<div class="split notes">
+			<div class="splitTitle notes">Eigen notities</div>
+			<div class="splitCopy" id="splitCopyNote" onclick="oAgenda.toggleSubjectNoteCopy(this, false, false);" type="note">Vul dezelfde notitie bij alle klassen in.</div>
+			<div id="noteColumn"></div>
+			
+			
+			
+			<div class="splitMessage">Een notitie kan niet worden gelezen door een leerling of ouder, maar wel door andere personen.</div>
+			<div class="splitNextLesson" id="splitNoteNextLesson" onclick="oAgenda.toggleNextLesson(this);" status="0">
+				Kopieer deze notitie naar
+			</div>
+			<div style="float:left; margin-top: 4px;">
+				<div id="noteNextLessonType" class="cf" name="smscselectNote"></div>
+			</div>
+		</div>
+	</div>
+
+		<div class="tabContainer" id="materialTab">
+		<div class="material">
+			<div class="splitTitle material">Lesmateriaal</div>
+			<div class="splitCopy" id="splitCopyMaterial" onclick="oAgenda.toggleMaterialCopy(this);">Gebruik hetzelfde lesmateriaal voor alle klassen.</div>
+			<div style="float:right; margin-top: 4px;">
+				<div id="materialNextLessonType" class="cf" name="smscselectMaterial"></div>
+			</div>
+			<div style="float:right;" class="splitNextLesson" id="splitMaterialNextLesson" onclick="oAgenda.toggleNextLesson(this);" status="0">
+				Kopieer dit lesmateriaal naar
+			</div>
+			<div class="classMaterials" id="classMaterials"></div>
+		</div>
+
+	</div>
+
+	<div class="tabContainer cf" id="assignmentTab" number="-1">
+		<div class="splitTasksTests info">
+			<div class="tabContainerBlock title">Taken en toetsen</div>
+			<div class="tabContainerBlock grey">
+				<div class="label">Omschrijving:</div>
+				<div class="input">
+					<textarea id="assignmentTabSubject" onChange="oAgenda.registerDescrChange();"></textarea>
+				</div>
+				<div class="ypSpacer"></div>
+			</div>
+	
+			<div class="tabContainerBlock">
+				<div class="label">Aankondiging:</div>
+				<div class="text" id="assignmentTabStartMoment"></div>
+				<div class="ypSpacer"></div>
+			</div>
+	
+			<div class="tabContainerBlock grey">
+				<div class="label">Type:</div>
+				<div class="input" id="assignmentTabTypeContainer">
+					<select id="assignmentTabType" onChange="oAgenda.onDeadlineChange(this);">
+						<option value="0" name="assignmentType" type="0" atID="1" selected>Huistaak</option><option value="1" name="assignmentType" type="1" atID="5" >Overhoring</option>
+					</select>
+				</div>
+				<div class="ypSpacer"></div>
+			</div>
+
+			<div class="tabContainerBlock">
+				<div class="label">Leerlingen:</div>
+				<div class="textLeft" id="assignmentTabPupils" title="Alle leerlingen">Alle leerlingen</div>
+				<div catch="1" class="textRight" id="assignmentTabPupilsButton" onclick="oAgenda.showStudents(this);" title="Selecteer leerlingen"></div>
+				<div class="ypSpacer"></div>
+			</div>
+			
+			<div class="tabContainerBlock grey">
+				<div class="label">Deadline:</div>
+				<div class="deadlineCopy" id="deadlineCopy" onclick="oAgenda.deadlineCopy(this);" status="0">Gebruik dezelfde deadline voor iedereen</div>
+				<div class="select" id="assignmentTabDeadlineCont"></div>
+				<div class="ypSpacer"></div>
+			</div>
+		</div>
+		<div class="splitTasksTests actions">
+			<div class="tabContainerBlock right">
+				<div class="assignmentTabButton" id="new" onclick="oAgenda.checkForChanges(null, 1)">Nieuwe taak of toets</div>
+				<div class="assignmentTabButton" id="clear" onclick="oAgenda.saveAssignment();">Deze taak of toets opslaan</div>
+				<div class="assignmentTabButton" id="delete" onclick="oAgenda.deleteAssignment();">Verwijder deze taak of toets</div>
+				<div class="ypSpacer" style="height:10px;"></div>
+			</div>
+			<div class="tabContainerBlock right">
+				<div class="tabs" unselectable="on">
+					<ul>
+						<li id="assignmentWeightTab" class="current" onclick="oAgenda.changeAssignmentsTab(0);">
+							<span unselectable="on">Taakbelasting</span>
+						</li>
+						<li id="assignmentMonthTab" onclick="oAgenda.changeAssignmentsTab(1);">
+							<span unselectable="on">30-dagenlijst</span>
+						</li>
+					</ul>
+				</div>
+				<div class="assignmentActionsContainer" id="assignmentActionsContainer">
+					<div class="tabContainerAssignments hide" id="assignmentMonthContent">
+						<div class="ypSpacer" style="height:4px;"></div>
+						<div class="tabContainerBlock right" id="weightAssignmentsTitle">U heeft volgende taken en toetsen ook nog gepland in de komende 30 dagen.</div>
+						<div class="ypSpacer" style="height:10px;"></div>
+						<div class="tabContainerBlock right" id="weightAssignments"></div>
+					</div>
+					<div class="tabContainerAssignments" id="assignmentWeightContent">
+						<div class="ypSpacer" style="height:4px;"></div>
+						<div class="tabContainerBlock right">Beweeg de muis over de kalender om de taken en toetsen voor deze klas(sen) te zien.</div>
+						<div class="tabContainerBlock right" id="datePickerAssignments"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tabContainer" id="filterTab">
+		<div class="filterTabContent" id="filterTabContent"></div>
+		<div class="filterTabMemory" id="filterMemory" onclick="oAgenda.toggleFilterMemory(this);" status="0">Toon deze filter als suggestie bij toekomstige lessen.</div>
+	</div>
+	<div class="tabContainer" id="yearplanTab">
+		<div class="yearplansTitle">Selecteer hier het jaarplan waarmee u deze les wilt koppelen.</div>
+		<div id="yearplanTabContent" style="height:300px; margin-bottom:10px; overflow-x:hidden; overflow-y:auto;"></div>
+		<div class="yearplansView selected" id="yearplansView" onclick="oAgenda.toggleYearplanView(this);" status="1">Toon enkel jaarplannen waarmee reeds lessen gekoppeld zijn.</div>
+		<div class="splitNextLesson" style="clear:both; float:left;" id="splitYpNextLesson" onclick="oAgenda.toggleNextLesson(this);" status="0">
+			Kopieer deze koppelingen samen met het lesonderwerp ook naar
+		</div>
+		<div style="float:left; margin-top: 8px;">
+			<select id="ypNextLessonType">
+				<option value="hour">aansluitende lessen</option>
+				<option value="day">alle lessen vandaag</option>
+			</select>
+		</div>
+	</div>
+	<div class="tabContainer" id="reservationsTab">
+		<div class="reservationsTabContent" id="reservationsTabContent"></div>
+		<div class="reservationsTabHide" id="reservationsTabHide" onclick="oReservations.toggleHide(this);" status="0">Toon alleen beschikbare items</div>
+		<div class="reservationsTabCopySelect">
+			<select id="reservationsTabCopyType">
+				<option value="hour">aansluitende lessen</option>
+				<option value="day">alle lessen vandaag</option>
+			</select>
+		</div>
+		<div class="reservationsTabCopy" id="reservationsTabCopy" onclick="oReservations.toggleCopy(this);" status="0">Sla deze reserveringen ook op voor</div>
+		</div>
+	<div class="tabContainer" id="actionsTab">
+		<div class="actionsTabContent" id="actionsTabContent"><div class="agendaActionsTabContainer">
+	
+	<div class="agendaActionsTabContent" id="agendaActionsTabContentReplace"></div>
+	
+	<div class="agendaActionsTabContent" id="agendaActionsTabContentSourcemanual">
+		agendaActionsTabReplaceSourcemanual
+	</div>
+</div>
+<div class="agendaActionsTabBack">
+	<div class="lessonEditBackButton" onclick="oLessonActions.goBack();">Vorige</div>
+</div></div>
+	</div>
+	<div class="tabContainer" id="lessonFormColorTabContainer">
+		<div class="lessonFormColorExampleTitle">
+			Kies een kleur voor dit vak:
+		</div>
+		<div class="lessonFormColorExampleContainer">
+			<div class="cf">
+				<div class="lessonFormColorExample color_watermeloen" color="watermeloen"></div>
+				<div class="lessonFormColorExample color_mandarijn" color="mandarijn"></div>
+				<div class="lessonFormColorExample color_vanille" color="vanille"></div>
+				<div class="lessonFormColorExample color_munt" color="munt"></div>
+				<div class="lessonFormColorExample color_zeilen" color="zeilen"></div>
+				<div class="lessonFormColorExample color_babyroos" color="babyroos"></div>
+				<div class="lessonFormColorExample color_lavendel" color="lavendel"></div>
+				<div class="lessonFormColorExample color_zilver" color="zilver"></div>
+			</div>
+			<div class="cf">
+				<div class="lessonFormColorExample color_vermiljoen" color="vermiljoen"></div>
+				<div class="lessonFormColorExample color_appelsien" color="appelsien"></div>
+				<div class="lessonFormColorExample color_banaan" color="banaan"></div>
+				<div class="lessonFormColorExample color_kiwi" color="kiwi"></div>
+				<div class="lessonFormColorExample color_hemel" color="hemel"></div>
+				<div class="lessonFormColorExample color_magenta" color="magenta"></div>
+				<div class="lessonFormColorExample color_lila" color="lila"></div>
+				<div class="lessonFormColorExample color_staal" color="staal"></div>
+			</div>
+			<div class="cf">
+				<div class="lessonFormColorExample color_robijn" color="robijn"></div>
+				<div class="lessonFormColorExample color_koper" color="koper"></div>
+				<div class="lessonFormColorExample color_oker" color="oker"></div>
+				<div class="lessonFormColorExample color_augurk" color="augurk"></div>
+				<div class="lessonFormColorExample color_ultramarijn" color="ultramarijn"></div>
+				<div class="lessonFormColorExample color_rode_bosbes" color="rode_bosbes"></div>
+				<div class="lessonFormColorExample color_violet" color="violet"></div>
+				<div class="lessonFormColorExample color_lood" color="lood"></div>
+			</div>
+			<div class="cf">
+				<div class="lessonFormColorExample color_bordeaux" color="bordeaux"></div>
+				<div class="lessonFormColorExample color_aarde" color="aarde"></div>
+				<div class="lessonFormColorExample color_donker_goud" color="donker_goud"></div>
+				<div class="lessonFormColorExample color_ruccola" color="ruccola"></div>
+				<div class="lessonFormColorExample color_koningsblauw" color="koningsblauw"></div>
+				<div class="lessonFormColorExample color_fluweel" color="fluweel"></div>
+				<div class="lessonFormColorExample color_purper" color="purper"></div>
+				<div class="lessonFormColorExample color_grafiet" color="grafiet"></div>
+			</div>
+		</div>
+		<div class="lessonFormColorExampleTitle">
+			Kies de zichtbare elementen voor al uw vakken in de weekweergave:
+		</div>
+		<div class="ssCheckbox lessonFormColorContentCheck checked" form_type="class">Klasnaam / Leerkrachtnaam</div>
+		<div class="ssCheckbox lessonFormColorContentCheck checked" form_type="course">Vak</div>
+		<div class="ssCheckbox lessonFormColorContentCheck checked" form_type="classroom">Lokaal</div>
+		<div class="ssCheckbox lessonFormColorContentCheck disabled">Lesonderwerp (steeds zichtbaar)</div>
+		<div class="lessonFormColorExampleTitle">
+			Voorbeeld:
+		</div>
+		<div id="lessonFormColorExampleExample" class="lessonFormColorExampleExample">
+			<span class="lessonFormColorExampleExampleClass"></span>
+			<span class="lessonFormColorExampleExampleCourse"></span>
+			<span class="lessonFormColorExampleExampleClassroom"></span>
+			<div class="lessonFormColorExampleExampleSubject">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<button class="smscButton blue lessonFormSaveButton" onclick="oAgenda.checkForChanges(false, 3); return false;">Opslaan</button>
+<div class="formResCapacity" id="formResCapacity" catchCapacity="1">
+	<div class="formResCapacityTitle" catchCapacity="1">Benodigde capaciteit?</div>
+	<div class="formResCapacityInputRow" catchCapacity="1">
+		<input type="text" class="formResCapacityInput" id="formResCapacityInput" catchCapacity="1" onkeypress="return oReservations.onKeyUp(event);" maxlength="4">
+		<div class="formResCapacitySave" catchCapacity="1" onclick="oReservations.saveCapacity();"></div>
+	</div>
+	<div class="formResCapacityComment" id="formResCapacityComment" catchCapacity="1"></div>
+</div></div>
+			<div id='lessonFormWindow_sidebox' style="position: absolute; z-index:-1; height: 490px; width: 250px; margin-top: -470px; margin-left: 545px;">
+	<div class="wborder wcentery wtopy-box" style="width:230px;" id="lessonFormWindow_titlebarSidebox">
+		<div class="window_leftTitle" id="lessonFormWindow_titleSidebox" style="margin-left: 5px;"></div>
+	</div>
+	<div class="wborder wbright wtopr-box"></div>
+
+	<div id='lessonFormWindow_contentSideBoxDiv' style='background-color:#eaeaea; width:244px; height:410px; color:#; float:left;'>
+		<div id='lessonFormWindow_contentSideBox' class="gradient_window_content"></div>
+	</div>
+	<div class="wborder wrightxy" style="height:410px;"></div>
+	
+	<div class="wborder wcentery wbottomy-box" style="width:230px" id="lessonFormWindow_footerSidebox"></div>
+	<div class="wborder wbright wbottomr-box"></div>
+</div>
+		</div>
+		<div class="wborder wrightxy" style="height:490px;" id="lessonFormWindow_rightBorder"></div>
+	</div>
+	<div>
+		<div class="wborder wbleft wbottoml"></div>
+		<div class="wborder wcentery wbottomy" style="width:769px" id="lessonFormWindow_footer"></div>
+		<div class="wborder wbright wbottomr">
+			<div class="usernoselectmoz" id="lessonFormWindow_scaleIcon" style="cursor:nw-resize" Unselectable="on">&raquo;</div>
+		</div>
+	</div>
+	<div class="usernoselectmoz spacer" Unselectable="on">&nbsp;</div>
+</div>
+<div id="lessonFormWindow_scaleLayer" class="scaleLayer"></div>
+<div id="lessonFormWindow_translayer" class="window_translayer"></div>
+	<div id="infoFormWindow" style="width:549px;height:550px; position:absolute; top:0; left:0;" class="gradient_window" style="overflow: visible;" useTrans="1" useFading="1" movable="1" scalable="0">
+	
+	<div id="infoFormWindow_movableDiv">
+		<div class="wborder wbleft wtopl"></div>
+		<div class="wborder wcentery wtopy usernoselectmoz" style="width:509px" id="infoFormWindow_titlebar" Unselectable="on">
+			<div class="window_leftTitle" id="infoFormWindow_title"></div>
+			<div class="window_rightButton" id="infoFormWindow_closeButton" onclick=""></div>
+		</div>
+		<div class="wborder wbright wtopr"></div>
+	</div>
+	<div>
+		<div class="wborder wleftxy" style="height:490px;" id="infoFormWindow_leftBorder"></div>
+		<div id='infoFormWindow_contentDiv' class="wborder wcenterxy_r" style='width:535px; height:490px; color:#393939;'>
+			<div id='infoFormWindow_content' class="gradient_window_content"><div class="lessonFormTitleContainer">
+	<div class="lessonFormTitleContainer" id="infoFormSubTitle"></div>
+</div>
+<div id="infoContainerTabs" class="tabs" unselectable="on">
+	<ul>
+		<li id="infoContainerSubjectTab" class="current" onclick="oAgenda.changeInfoContainerTab('Subject');">
+			<span unselectable="on">Details</span>
+		</li>
+		<li id="infoContainerNoteTab" onclick="oAgenda.changeInfoContainerTab('Note');">
+			<span unselectable="on">Notitie</span>
+		</li>
+		<li id="infoContainerColorTab" onclick="oAgenda.changeInfoContainerTab('Color');">
+			<span unselectable="on">Kleur</span>
+		</li>
+	</ul>
+</div>
+<div class="infoContainer" id="infoContainerStudent"></div>
+<button class="infoContainerButton smscButton" onclick="oAgenda.saveInfo();">Opslaan</button></div>
+			
+		</div>
+		<div class="wborder wrightxy" style="height:490px;" id="infoFormWindow_rightBorder"></div>
+	</div>
+	<div>
+		<div class="wborder wbleft wbottoml"></div>
+		<div class="wborder wcentery wbottomy" style="width:509px" id="infoFormWindow_footer"></div>
+		<div class="wborder wbright wbottomr">
+			<div class="usernoselectmoz" id="infoFormWindow_scaleIcon" style="cursor:nw-resize" Unselectable="on">&raquo;</div>
+		</div>
+	</div>
+	<div class="usernoselectmoz spacer" Unselectable="on">&nbsp;</div>
+</div>
+<div id="infoFormWindow_scaleLayer" class="scaleLayer"></div>
+<div id="infoFormWindow_translayer" class="window_translayer"></div>
+	<div id="filterFormWindow" style="width:509px;height:470px; position:absolute; top:0; left:0;" class="gradient_window" style="overflow: visible;" useTrans="1" useFading="1" movable="1" scalable="0">
+	
+	<div id="filterFormWindow_movableDiv">
+		<div class="wborder wbleft wtopl"></div>
+		<div class="wborder wcentery wtopy usernoselectmoz" style="width:469px" id="filterFormWindow_titlebar" Unselectable="on">
+			<div class="window_leftTitle" id="filterFormWindow_title"></div>
+			<div class="window_rightButton" id="filterFormWindow_closeButton" onclick=""></div>
+		</div>
+		<div class="wborder wbright wtopr"></div>
+	</div>
+	<div>
+		<div class="wborder wleftxy" style="height:410px;" id="filterFormWindow_leftBorder"></div>
+		<div id='filterFormWindow_contentDiv' class="wborder wcenterxy_r" style='width:495px; height:410px; color:#393939;'>
+			<div id='filterFormWindow_content' class="gradient_window_content"><div class="tabs" unselectable="on">
+	<ul>
+		
+		
+		<!-- BEGIN teachersTab -->
+		<li id="filterFormTeacherTab" onclick="oFilter.changeTab(2); oFilter.getFilterInfo('Teacher');">
+			<span unselectable="on">Leerkrachten</span>
+		</li>
+		<!-- END teachersTab -->
+	</ul>
+</div>
+
+<div class="ypSpacer"></div>
+
+<div id="filterFormContainer">
+
+	
+
+	
+
+	<!-- BEGIN teachers -->
+	<div class="tabContainer filter hide" id="teacherTab">
+		<div class="tabContainerBlock">
+			<div class="label">Leerkrachten:</div>
+			<div class="content" id="filterFormContentTeacher"></div>
+			<div id="filterDeletedTeacher" class="filterDeleted" onclick="oFilter.toggleDeleted(this, 'Teacher');" status="0">Toon verwijderde leerkrachten</div>
+		</div>
+	</div>
+	<!-- END teachers -->
+</div></div>
+			
+		</div>
+		<div class="wborder wrightxy" style="height:410px;" id="filterFormWindow_rightBorder"></div>
+	</div>
+	<div>
+		<div class="wborder wbleft wbottoml"></div>
+		<div class="wborder wcentery wbottomy" style="width:469px" id="filterFormWindow_footer"></div>
+		<div class="wborder wbright wbottomr">
+			<div class="usernoselectmoz" id="filterFormWindow_scaleIcon" style="cursor:nw-resize" Unselectable="on">&raquo;</div>
+		</div>
+	</div>
+	<div class="usernoselectmoz spacer" Unselectable="on">&nbsp;</div>
+</div>
+<div id="filterFormWindow_scaleLayer" class="scaleLayer"></div>
+<div id="filterFormWindow_translayer" class="window_translayer"></div>
+	<div id="alertFormWindow" style="width:459px;height:400px; position:absolute; top:0; left:0;" class="gradient_window" style="overflow: visible;" useTrans="1" useFading="1" movable="1" scalable="0">
+	
+	<div id="alertFormWindow_movableDiv">
+		<div class="wborder wbleft wtopl"></div>
+		<div class="wborder wcentery wtopy usernoselectmoz" style="width:419px" id="alertFormWindow_titlebar" Unselectable="on">
+			<div class="window_leftTitle" id="alertFormWindow_title"></div>
+			<div class="window_rightButton" id="alertFormWindow_closeButton" onclick=""></div>
+		</div>
+		<div class="wborder wbright wtopr"></div>
+	</div>
+	<div>
+		<div class="wborder wleftxy" style="height:340px;" id="alertFormWindow_leftBorder"></div>
+		<div id='alertFormWindow_contentDiv' class="wborder wcenterxy_r" style='width:445px; height:340px; color:#;'>
+			<div id='alertFormWindow_content' class="gradient_window_content"><div class="tabs" unselectable="on">
+	<ul>
+		<li id="alertAssignmentsTab" class="current" onclick="oAlert.changeAlertTab(0, false);">
+			<span unselectable="on">Taken en toetsen</span>
+		</li>
+		<li id="alertSubjectsTab" onclick="oAlert.changeAlertTab(1, false);">
+			<span unselectable="on">Lesonderwerpen</span>
+		</li>
+		<li id="alertNotesTab" onclick="oAlert.changeAlertTab(2, false);">
+			<span unselectable="on">Notities</span>
+		</li>
+		<li id="alertMaterialsTab" onclick="oAlert.changeAlertTab(3, false);">
+			<span unselectable="on">Lesmateriaal</span>
+		</li>
+	</ul>
+</div>
+<div id="alertContentContainer" style="clear:both; float:left;">
+	<div class="tabContainerAlert hide" id="alertAssignmentsTabContent">
+		<div class="alertTitleFloatContainer">Onderstaande items zijn ontkoppeld. Selecteer een nieuwe les om de koppeling te herstellen.</div>
+		<div id="alertAssignmentsContent" class="alertContent"></div>
+	</div>
+
+	<div class="tabContainerAlert hide" id="alertSubjectsTabContent">
+		<div class="alertTitleFloatContainer">Onderstaande items zijn ontkoppeld. Selecteer een nieuwe les om de koppeling te herstellen.</div>
+		<div id="alertSubjectsContent" class="alertContent"></div>
+	</div>
+
+	<div class="tabContainerAlert hide" id="alertNotesTabContent">
+		<div class="alertTitleFloatContainer">Onderstaande items zijn ontkoppeld. Selecteer een nieuwe les om de koppeling te herstellen.</div>
+		<div id="alertNotesContent" class="alertContent"></div>
+	</div>
+
+	<div class="tabContainerAlert hide" id="alertMaterialsTabContent">
+		<div class="alertTitleFloatContainer">Onderstaande items zijn ontkoppeld. Selecteer een nieuwe les om de koppeling te herstellen.</div>
+		<div id="alertMaterialsContent" class="alertContent"></div>
+	</div>
+</div>
+
+<button class="smscButton blue alertSaveButton" onclick="oAlert.save(); return false;">Opslaan</button></div>
+			<div id='alertFormWindow_sidebox' style="position: absolute; z-index:-1; height: 340px; width: 400px; margin-top: -320px; margin-left: 45px;">
+	<div class="wborder wcentery wtopy-box" style="width:380px;" id="alertFormWindow_titlebarSidebox">
+		<div class="window_leftTitle" id="alertFormWindow_titleSidebox" style="margin-left: 5px;"></div>
+	</div>
+	<div class="wborder wbright wtopr-box"></div>
+
+	<div id='alertFormWindow_contentSideBoxDiv' style='background-color:#eaeaea; width:394px; height:260px; color:#; float:left;'>
+		<div id='alertFormWindow_contentSideBox' class="gradient_window_content"></div>
+	</div>
+	<div class="wborder wrightxy" style="height:260px;"></div>
+	
+	<div class="wborder wcentery wbottomy-box" style="width:380px" id="alertFormWindow_footerSidebox"></div>
+	<div class="wborder wbright wbottomr-box"></div>
+</div>
+		</div>
+		<div class="wborder wrightxy" style="height:340px;" id="alertFormWindow_rightBorder"></div>
+	</div>
+	<div>
+		<div class="wborder wbleft wbottoml"></div>
+		<div class="wborder wcentery wbottomy" style="width:419px" id="alertFormWindow_footer"></div>
+		<div class="wborder wbright wbottomr">
+			<div class="usernoselectmoz" id="alertFormWindow_scaleIcon" style="cursor:nw-resize" Unselectable="on">&raquo;</div>
+		</div>
+	</div>
+	<div class="usernoselectmoz spacer" Unselectable="on">&nbsp;</div>
+</div>
+<div id="alertFormWindow_scaleLayer" class="scaleLayer"></div>
+<div id="alertFormWindow_translayer" class="window_translayer"></div>
+	<div id="printFormWindow" style="width:509px;height:550px; position:absolute; top:0; left:0;" class="gradient_window" style="overflow: visible;" useTrans="1" useFading="1" movable="1" scalable="0">
+	
+	<div id="printFormWindow_movableDiv">
+		<div class="wborder wbleft wtopl"></div>
+		<div class="wborder wcentery wtopy usernoselectmoz" style="width:469px" id="printFormWindow_titlebar" Unselectable="on">
+			<div class="window_leftTitle" id="printFormWindow_title"></div>
+			<div class="window_rightButton" id="printFormWindow_closeButton" onclick=""></div>
+		</div>
+		<div class="wborder wbright wtopr"></div>
+	</div>
+	<div>
+		<div class="wborder wleftxy" style="height:490px;" id="printFormWindow_leftBorder"></div>
+		<div id='printFormWindow_contentDiv' class="wborder wcenterxy_r" style='width:495px; height:490px; color:#;'>
+			<div id='printFormWindow_content' class="gradient_window_content"><div class="printContainer">
+	<div class="printInfo">Beschikbare afdrukmodellen:</div>
+	<div class="printContent">
+		<div class="printType" id="printType3" onmouseover="this.style.backgroundColor='#DEDEDE'" onmouseout="this.style.backgroundColor='#F4F4F4'" onclick="oPrint.selectType(3);">Weekagenda</div>
+		<div class="printType" id="printType6" onmouseover="this.style.backgroundColor='#DEDEDE'" onmouseout="this.style.backgroundColor='#F4F4F4'" onclick="oPrint.selectType(6);">Weekagenda in lijstweergave</div>
+		<div class="printType" id="printType1" onmouseover="this.style.backgroundColor='#DEDEDE'" onmouseout="this.style.backgroundColor='#F4F4F4'" onclick="oPrint.selectType(1);">Lesagenda</div>
+		<div class="printType" id="printType2" onmouseover="this.style.backgroundColor='#DEDEDE'" onmouseout="this.style.backgroundColor='#F4F4F4'" onclick="oPrint.selectType(2);">Taken- en toetsenkalender</div>
+		
+	</div>
+	<div class="printLoading hidden"></div>
+	<button class="smscButton blue printButton" onclick="oPrint.printPdf(); return false;">Afdrukken</button>
+</div></div>
+			<div id='printFormWindow_sidebox' style="position: absolute; z-index:-1; height: 490px; width: 400px; margin-top: -470px; margin-left: 95px;">
+	<div class="wborder wcentery wtopy-box" style="width:380px;" id="printFormWindow_titlebarSidebox">
+		<div class="window_leftTitle" id="printFormWindow_titleSidebox" style="margin-left: 5px;"></div>
+	</div>
+	<div class="wborder wbright wtopr-box"></div>
+
+	<div id='printFormWindow_contentSideBoxDiv' style='background-color:#eaeaea; width:394px; height:410px; color:#; float:left;'>
+		<div id='printFormWindow_contentSideBox' class="gradient_window_content"><div class="printContainerSidebox" id="printContainerSideboxMsg">Selecteer een afdrukmodel uit de lijst.</div>
+
+<div class="printContainerSidebox Settings" id="printContainerSideboxSettings1">
+	<div class="printBox">
+		<div class="printBoxTitle">Vanaf:</div>
+		<div class="printBoxContent" id="startDateContainer1"></div>
+	</div>
+	<div class="printBox">
+		<div class="printBoxTitle">Tot en met:</div>
+		<div class="printBoxContent" id="endDateContainer1"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Lessen:</div>
+		<div class="printSelectAll" onclick="oPrint.selectAllLessons(this);" status="0"></div>
+		<div class="printLessonList" id="lessonList"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Opties:</div>
+		<div class="printWhat selected" status="1" id="subject1" onclick="oPrint.selectWhat('subject1');">Toon lesonderwerp</div>
+		<div class="printWhat selected" status="1" id="task1" onclick="oPrint.selectWhat('task1');">Toon taken</div>
+		<div class="printWhat selected" status="1" id="test1" onclick="oPrint.selectWhat('test1');">Toon toetsen</div>
+	</div>
+	<div class="printTitle">Klas:</div>
+	<div class="printClass" id="printClass1"></div>
+</div>
+
+<div class="printContainerSidebox Settings" id="printContainerSideboxSettings2">
+	<div class="printBox">
+		<div class="printBoxTitle">Vanaf:</div>
+		<div class="printBoxContent" id="startDateContainer2"></div>
+	</div>
+	<div class="printBox">
+		<div class="printBoxTitle">Tot en met:</div>
+		<div class="printBoxContent" id="endDateContainer2"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Toon:</div>
+		<div class="printBoxContent" id="assignmentTypes2"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Opties:</div>
+		<div class="printWhat selected" status="1" id="printWeekend" onclick="oPrint.selectWhat('printWeekend');">Toon weekend</div>
+		<div class="printWhat selected" status="1" id="printIcons" onclick="oPrint.selectWhat('printIcons');">Toon iconen</div>
+		<div class="printWhat selected" status="1" id="printWeekNr" onclick="oPrint.selectWhat('printWeekNr');">Toon weeknummer</div>
+		<div class="printWeekNrType">
+			<select id="printWeekNrType">
+				<option value="1">Schooljaar</option>
+				<option value="2">Kalenderjaar</option>
+			</select>
+		</div>
+		<div class="printWhat selected" status="1" id="printInscription" onclick="oPrint.selectWhat('printInscription');">Toon legenda</div>
+	</div>
+	<div class="printTitle">Klas:</div>
+	<div class="printClass" id="printClass2"></div>
+</div>
+
+<div class="printContainerSidebox Settings" id="printContainerSideboxSettings3">
+	<div class="printBox">
+		<div class="printBoxTitle">Vanaf:</div>
+		<div class="printBoxContent" id="startDateContainer3"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Toon:</div>
+		<div class="printBoxContent" id="assignmentTypes3"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Opties:</div>
+		<div class="printWhat selected" status="1" id="subject3" onclick="oPrint.selectWhat('subject3');">Toon lesonderwerp</div>
+		<div class="printWhat selected" status="1" id="classroom3" onclick="oPrint.selectWhat('classroom3');">Toon klaslokaal</div>
+		<div class="printTitle">Orientatie:</div>
+		<div class="printClass" id="printOrientation">
+			<select id="printOrientationSelect">
+				<option value="landscape">Liggend</option>
+				<option value="portrait">Staand</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="printBox">
+		<div class="printTitle">Klas:</div>
+		<div class="printClass" id="printClass3"></div>
+	</div>
+</div>
+
+<div class="printContainerSidebox Settings" id="printContainerSideboxSettings4">
+	<div class="printBox">
+		<div class="printBoxTitle">Vanaf:</div>
+		<div class="printBoxContent" id="startDateContainer4"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Toon:</div>
+		<div class="printBoxContent" id="assignmentTypes4"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Opties:</div>
+		<div class="printWhat selected" status="1" id="subject4" onclick="oPrint.selectWhat('subject4');">Toon lesonderwerp</div>
+		<div class="printWhat selected" status="1" id="classroom4" onclick="oPrint.selectWhat('classroom4');">Toon klaslokaal</div>
+		<div class="printWhat" status="0" id="startMoments4" onclick="oPrint.selectWhat('startMoments4');">Toon opgavemomenten</div>
+		<div class="printTitle">Orientatie:</div>
+		<div class="printClass" id="printOrientation">
+			<select id="printOrientationSelectTeacher">
+				<option value="landscape">Liggend</option>
+				<option value="portrait">Staand</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+<div class="printContainerSidebox Settings" id="printContainerSideboxSettings5">
+	<div class="printBox">
+		<div class="printBoxTitle">Vanaf:</div>
+		<div class="printBoxContent" id="startDateContainer5"></div>
+	</div>
+	<div class="printBox">
+		<div class="printBoxTitle">Tot en met:</div>
+		<div class="printBoxContent" id="endDateContainer5"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Toon:</div>
+		<div class="printBoxContent" id="assignmentTypes5"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Opties:</div>
+		<div class="printWhat selected" status="1" id="subject5" onclick="oPrint.selectWhat('subject5');">Toon lesonderwerp</div>
+		<div class="printWhat selected" status="1" id="classroom5" onclick="oPrint.selectWhat('classroom5');">Toon klaslokaal</div>
+		<div class="printWhat" status="0" id="startMoments5" onclick="oPrint.selectWhat('startMoments5');">Toon opgavemomenten</div>
+		<div class="printWhat selected" status="1" id="notes5" onclick="oPrint.selectWhat('notes5');">Toon notities</div>
+		<div class="printWhat selected" status="1" id="daynewpage5" onclick="oPrint.selectWhat('daynewpage5');">Start dag op een nieuw blad</div>
+		<div class="printWhat selected" status="1" id="color5" onclick="oPrint.selectWhat('color5');">Druk af in kleur</div>
+		<div class="printWhat selected" status="1" id="empty5" onclick="oPrint.selectWhat('empty5');">Toon lege lesuren</div>
+	</div>
+</div>
+
+<div class="printContainerSidebox Settings" id="printContainerSideboxSettings6">
+	<div class="printBox">
+		<div class="printBoxTitle">Vanaf:</div>
+		<div class="printBoxContent" id="startDateContainer6"></div>
+	</div>
+	<div class="printBox">
+		<div class="printBoxTitle">Tot en met:</div>
+		<div class="printBoxContent" id="endDateContainer6"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Toon:</div>
+		<div class="printBoxContent" id="assignmentTypes6"></div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Opties:</div>
+		<div class="printWhat selected" status="1" id="subject6" onclick="oPrint.selectWhat('subject6');">Toon lesonderwerp</div>
+		<div class="printWhat selected" status="1" id="classroom6" onclick="oPrint.selectWhat('classroom6');">Toon klaslokaal</div>
+		<div class="printWhat" status="0" id="startMoments6" onclick="oPrint.selectWhat('startMoments6');">Toon opgavemomenten</div>
+		<div class="printWhat selected" status="1" id="notes6" onclick="oPrint.selectWhat('notes6');">Toon notities</div>
+		<div class="printWhat selected" status="1" id="daynewpage6" onclick="oPrint.selectWhat('daynewpage6');">Start dag op een nieuw blad</div>
+		<div class="printWhat selected" status="1" id="color6" onclick="oPrint.selectWhat('color6');">Druk af in kleur</div>
+		<div class="printWhat selected" status="1" id="empty6" onclick="oPrint.selectWhat('empty6');">Toon lege lesuren</div>
+	</div>
+	<div class="printBox">
+		<div class="printTitle">Klas:</div>
+		<div class="printClass" id="printClass6"></div>
+	</div>
+</div></div>
+	</div>
+	<div class="wborder wrightxy" style="height:410px;"></div>
+	
+	<div class="wborder wcentery wbottomy-box" style="width:380px" id="printFormWindow_footerSidebox"></div>
+	<div class="wborder wbright wbottomr-box"></div>
+</div>
+		</div>
+		<div class="wborder wrightxy" style="height:490px;" id="printFormWindow_rightBorder"></div>
+	</div>
+	<div>
+		<div class="wborder wbleft wbottoml"></div>
+		<div class="wborder wcentery wbottomy" style="width:469px" id="printFormWindow_footer"></div>
+		<div class="wborder wbright wbottomr">
+			<div class="usernoselectmoz" id="printFormWindow_scaleIcon" style="cursor:nw-resize" Unselectable="on">&raquo;</div>
+		</div>
+	</div>
+	<div class="usernoselectmoz spacer" Unselectable="on">&nbsp;</div>
+</div>
+<div id="printFormWindow_scaleLayer" class="scaleLayer"></div>
+<div id="printFormWindow_translayer" class="window_translayer"></div>
+	<div id="notesFormWindow" style="width:809px;height:450px; position:absolute; top:0; left:0;" class="gradient_window" style="overflow: visible;" useTrans="1" useFading="1" movable="1" scalable="0">
+	
+	<div id="notesFormWindow_movableDiv">
+		<div class="wborder wbleft wtopl"></div>
+		<div class="wborder wcentery wtopy usernoselectmoz" style="width:769px" id="notesFormWindow_titlebar" Unselectable="on">
+			<div class="window_leftTitle" id="notesFormWindow_title"></div>
+			<div class="window_rightButton" id="notesFormWindow_closeButton" onclick=""></div>
+		</div>
+		<div class="wborder wbright wtopr"></div>
+	</div>
+	<div>
+		<div class="wborder wleftxy" style="height:390px;" id="notesFormWindow_leftBorder"></div>
+		<div id='notesFormWindow_contentDiv' class="wborder wcenterxy_r" style='width:795px; height:390px; color:#;'>
+			<div id='notesFormWindow_content' class="gradient_window_content"><div class="notesContainer" id="notesContainer">
+	<div class="notesParams" id="notesParams">
+		<div class="notesParam" id="notesParamClasses">
+			<select class="notesParamsSelect">
+				<option value="-1">Kies een klas</option>
+			</select>
+		</div>
+		<div class="notesParam" id="notesParamCourses">
+			<select class="notesParamsSelect">
+				<option value="-1">Kies een vak</option>
+			</select>
+		</div>
+		<div class="notesParamInput" style="margin-left:25px;">
+			Van: <input id="notesInputStart" class="input dp notes" myType="notes">
+		</div>
+		<div class="notesParamInput" style="margin-left:10px;">
+			Tot en met: <input id="notesInputEnd" class="input dp notes" myType="notes">
+		</div>
+	</div>
+
+	<div class="spacer" style="height:20px;">&nbsp;</div>
+	<div class="smsc-table">
+		<div class="smsc-table__header notesRow" jqueryCatcherNotes1="1">
+			<div class="smsc-table__cell notesRowCell notesRowCellDate notesRowCellDateHeader">Datum</div>
+			<div class="smsc-table__cell notesRowCell notesRowCellCourse notesRowCellCourseHeader">Vak</div>
+			<div class="smsc-table__cell notesRowCell notesRowCellNote notesRowCellNoteHeader" id="notesRowCellNote" jqueryCatcherNotes3="1">Notitie</div>
+			<div class="smsc-table__cell notesRowCell notesRowCellSubject notesRowCellSubjectHeader" id="notesRowCellSubject" jqueryCatcherNotes2="1">Lesonderwerp</div>
+		</div>
+		<div id="notesRows" class="notesRows"><br>&nbsp;Kies een klas of vak.</div>
+	</div>
+</div>
+<div id="notesShowSubject" class="notesShowSubject" status="0" onclick="oAgenda.toggleNotesShowSubject(this);">Toon het lesonderwerp in de lijst</div></div>
+			
+		</div>
+		<div class="wborder wrightxy" style="height:390px;" id="notesFormWindow_rightBorder"></div>
+	</div>
+	<div>
+		<div class="wborder wbleft wbottoml"></div>
+		<div class="wborder wcentery wbottomy" style="width:769px" id="notesFormWindow_footer"></div>
+		<div class="wborder wbright wbottomr">
+			<div class="usernoselectmoz" id="notesFormWindow_scaleIcon" style="cursor:nw-resize" Unselectable="on">&raquo;</div>
+		</div>
+	</div>
+	<div class="usernoselectmoz spacer" Unselectable="on">&nbsp;</div>
+</div>
+<div id="notesFormWindow_scaleLayer" class="scaleLayer"></div>
+<div id="notesFormWindow_translayer" class="window_translayer"></div>
+</div>
+		</div>
+                
+        <!-- javascript variables -->
+        <script type="text/javascript">var SMSC = SMSC || {};</script>
+                                        <script type="text/javascript">$.extend(true, SMSC, JSON.parse('\u007B\u0022vars\u0022\u003A\u007B\u0022showNotifyAlerts\u0022\u003Atrue,\u0022isMP\u0022\u003Afalse,\u0022tracklogging\u0022\u003Atrue,\u0022storageToken\u0022\u003A\u0022211b68acfc8ba933f3eeddc110fb8012\u0022,\u0022socketUrl\u0022\u003A\u0022https\u003A\\\/\\\/nodejs\u002Dgs.smartschool.be\u0022,\u0022socketPort\u0022\u003A\u0022443\u0022,\u0022queueUuid\u0022\u003A\u0022ff7cd046\u002Def56\u002D4f40\u002D8735\u002Da96018dec01f\u0022,\u0022userID\u0022\u003A13674,\u0022lng_rpc_error_title\u0022\u003A\u0022Melding\u0022,\u0022lng_rpc_error_unknown_msg\u0022\u003A\u0022Er\u0020is\u0020een\u0020onbekende\u0020fout\u0020opgetreden.\u0022,\u0022lng_rpc_error_not_found\u0022\u003A\u0022Het\u0020onderdeel\u0020dat\u0020je\u0020zoekt\u0020is\u0020niet\u0020gevonden.\u0020Mogelijk\u0020is\u0020het\u0020verwijderd\u0020of\u0020onzichtbaar\u0020gemaakt.\u0022,\u0022lng_rpc_error_close\u0022\u003A\u0022Sluiten\u0022,\u0022lng_rpc_error_ok\u0022\u003A\u0022OK\u0022,\u0022lng_rpc_following_errors_appeared\u0022\u003A\u0022Volgende\u0020fouten\u0020zijn\u0020opgetreden\u0022\u007D\u007D'));</script>
+
+                                        <script type="text/javascript">$.extend(true, SMSC, JSON.parse('\u007B\u0022quickSearch\u0022\u003A\u007B\u0022quicksearch.search_placeholder\u0022\u003A\u0022Zoeken...\u0022,\u0022quicksearch.search_option_own\u002Dplatform\u002Donly\u0022\u003A\u0022Enkel\u0020in\u0020eigen\u0020platform\u0020zoeken\u0022,\u0022quicksearch.search_option_include\u002Ddeleted\u0022\u003A\u0022Ook\u0020\u003Cspan\u0020style\u003D\\\u0022color\u003A\u0023E30000\u003B\u0020font\u002Dweight\u003A\u0020bold\u003B\\\u0022\u003Everwijderde\u003C\\\/span\u003E\u0020gebruikers\u0020tonen\u0022,\u0022quicksearch.default_deleted_string\u0022\u003A\u0022verwijderd\u0022,\u0022quicksearch.search_not_found\u0022\u003A\u0022We\u0020hebben\u0020__SEARCHSTRING__\u0020niet\u0020gevonden.\u0020Probeer\u0020een\u0020andere\u0020zoekterm.\u0022,\u0022quicksearch.search_subtitle_suggestions\u0022\u003A\u0022Suggesties\u0022,\u0022quicksearch.currentUser\u0022\u003A\u0022Aangemelde\u0020gebruiker\u0022,\u0022quicksearch.me\u0022\u003A\u0022Mezelf\u0022,\u0022quicksearch.all_students\u0022\u003A\u0022Alle\u0020leerlingen\u0022,\u0022planner.user_role.1\u0022\u003A\u0022Alle\u0020leerlingen\u0022,\u0022quicksearch.unassigned\u0022\u003A\u0022Niemand\u0022,\u0022quicksearch.search_subtitle_favourites\u0022\u003A\u0022Favorieten\u0022,\u0022quicksearch.mark_as_favourite\u0022\u003A\u0022Toevoegen\u0020aan\u0020favorieten\u0022,\u0022quicksearch.discard_as_favourite\u0022\u003A\u0022Verwijderen\u0020uit\u0020favorieten\u0022\u007D,\u0022vars\u0022\u003A\u007B\u0022locale\u0022\u003A\u0022nl\u0022,\u0022userPictureDomain\u0022\u003A\u0022https\u003A\\\/\\\/userpicture20.smartschool.be\u0022,\u0022currentUser\u0022\u003A\u007B\u0022userIdentifier\u0022\u003A\u00223691_13674_0\u0022,\u0022userPictureHash\u0022\u003A\u00223691_92615275\u002Df35d\u002D429d\u002Dbcaf\u002D51307c0da4de\u0022,\u0022userPictureUrl\u0022\u003A\u0022https\u003A\\\/\\\/userpicture20.smartschool.be\\\/User\\\/Userimage\\\/hashimage\\\/hash\\\/3691_92615275\u002Df35d\u002D429d\u002Dbcaf\u002D51307c0da4de\\\/plain\\\/1\\\/res\\\/128\u0022,\u0022name\u0022\u003A\u0022Daan\u0020Verstreken\u0022,\u0022nameReverse\u0022\u003A\u0022Verstreken\u0020Daan\u0022,\u0022description\u0022\u003A\u0022\u0022,\u0022descriptionReverse\u0022\u003A\u0022\u0022\u007D,\u0022tinyMCEVersion\u0022\u003A\u00226.1.0\u0022,\u0022ssID\u0022\u003A3691\u007D\u007D'));</script>
+
+            <script type="text/javascript">$.extend(true, SMSC, JSON.parse('\u007B\u0022wopiConfig\u0022\u003A\u007B\u0022wopiActions\u0022\u003A\u007B\u0022pdf\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Pdf\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/mime_pdf\\\/mime_pdf_16x16.png\u0022\u007D\u007D,\u0022csv\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022convert\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022ods\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022xls\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022convert\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022xlsb\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022xlsm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022xlsx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Excel\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Excel\u002Dcolor\\\/Excel\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022odp\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022pot\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022potm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022potx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022pps\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D,\u0022convert\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022ppsm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022ppsx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022ppt\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D,\u0022convert\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022pptm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022pptx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022PowerPoint\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/PowerPoint\u002Dcolor\\\/PowerPoint\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022vdw\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Visio\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Visio\u002Dcolor\\\/Visio\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022vsd\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Visio\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Visio\u002Dcolor\\\/Visio\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022vsdm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Visio\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Visio\u002Dcolor\\\/Visio\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022vsdx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Visio\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Visio\u002Dcolor\\\/Visio\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Visio\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Visio\u002Dcolor\\\/Visio\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022wopitest\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WopiTest\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WopiTest\u002Dcolor\\\/WopiTest\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WopiTest\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WopiTest\u002Dcolor\\\/WopiTest\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022wopitestx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WopiTest\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WopiTest\u002Dcolor\\\/WopiTest\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WopiTest\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WopiTest\u002Dcolor\\\/WopiTest\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022doc\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D,\u0022convert\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022docm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022docx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022dot\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022dotm\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022dotx\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022odt\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D,\u0022edit\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022rtf\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022Word\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/Word\u002Dcolor\\\/Word\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022b\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WordPrague\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WordPrague\u002Dcolor\\\/WordPrague\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022fluid\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WordPrague\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WordPrague\u002Dcolor\\\/WordPrague\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022note\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WordPrague\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WordPrague\u002Dcolor\\\/WordPrague\u002Dcolor_16x16.png\u0022\u007D\u007D,\u0022whiteboard\u0022\u003A\u007B\u0022view\u0022\u003A\u007B\u0022applicationName\u0022\u003A\u0022WordPrague\u0022,\u0022applicationIcon\u0022\u003A\u0022\\\/smsc\\\/img\\\/WordPrague\u002Dcolor\\\/WordPrague\u002Dcolor_16x16.png\u0022\u007D\u007D\u007D,\u0022allowCreate\u0022\u003Atrue\u007D\u007D'));</script>
+
+
+          
+        <!-- javascriptContent Body  -->
+                                        <script type="text/javascript">;(function(window, document, $, undefined) { $(document).ready(function(e){ $.datepicker.setDefaults($.datepicker.regional['nl-BE']); }); })(window, document, jQuery);</script>
+            <script type="text/javascript">
+		var currentTimestamp							= 1666711766;
+		var schoolyear_start							= '2022-09-01';
+		var schoolyear_stop								= '2023-08-31';
+		var forcedDate									= 1666798119;
+		var forcedTeacher								= 0;
+		var forcedClass									= 0;
+		var forcedClassroom								= '0';
+		var forecedHourID 								= 0;
+		var _CONFIRM_DELETE_ASSIGNMENT					= 'Bent u zeker dat u deze taak of toets wilt verwijderen?';
+		var jsTemplates 								= {"tpl_agenda_grid_block_content":"<div ondblclick=\"{ondblclick}\" id=\"weekBlock_{momentID}\" activityID=\"{activityID}\" hour_date=\"{hour_date}\" dateid=\"{dateID}\" assignmentids=\"{assignmentIDs}\" momentid=\"{momentIDelm}\" lessonid=\"{lessonID}\" unselectable=\"on\" style=\"-moz-user-select:none; -webkit-user-select:none; padding-top:{paddingTop}px;\"><div class=\"cf\"><div class=\"agendaGridBlockContentRight\"><div class=\"agendaGridBlockContentRightButton {bothStartStatusClassName}\"><\/div><div class=\"agendaGridBlockContentRightButton {testEndStatusClassName}\"><\/div><div class=\"agendaGridBlockContentRightButton {assignmentEndStatusClassName}\"><\/div><\/div><div class=\"agendaGridBlockContentLeft\" style=\"width:{objectWidth}px; height:{objectHeight}px;\"><div unselectable=\"on\" class=\"agendaGridBlockContentLeftCourseTitle\" title=\"{courseTitle}\">{course}<\/div><div class=\"agendaGridBlockContentLeftSubject\" unselectable=\"on\" style=\" max-height:{subjectHeight}px; width:{subjectWidth}px;\">{subject}<\/div><\/div><\/div><div class=\"agendaGridBlockContentStatus hidden {noteStatusClassName}\" title=\"{note}\" id=\"noteStatus_{dateID}\" style=\"width:{noteWidth}px;\">{note}<\/div><\/div>","tpl_agenda_grid_header":"<div class=\"gridHeader\" style=\"top:{top}; left:{left}; width:{width};\">{title}<\/div>","tpl_agenda_grid_block":"<div unselectable=\"on\" class=\"{className} {colorClassName}\" style=\"top:{top}; left:{left}; width:{width}; height:{height};\" id=\"lessonBlock{mini}_{id}\" freeday=\"0\"><div unselectable=\"on\"><div unselectable=\"on\" class=\"gridBlockContent\"  id=\"lessonBlockContent{mini}_{id}\"><\/div><\/div><\/div>","tpl_agenda_grid_block_mini":"<div onclick=\"oAgenda.clickMiniview(this);\" unselectable=\"on\" class=\"{className} {colorClassName} mini\" style=\"top:{top}; left:{left}; width:{width}; height:{height};\" id=\"lessonBlockMini_{id}\" freeday=\"0\" dateID=\"{id}\"><div unselectable=\"on\"><div unselectable=\"on\" class=\"gridBlockContent\" id=\"lessonBlockContentMini_{id}\"><\/div><\/div><\/div><!--<div onmouseover=\"oAgenda.overMiniview(this);\" onmouseout=\"oAgenda.outMiniview(this);\" onclick=\"oAgenda.clickMiniview(this);\" unselectable=\"on\" class=\"{className} {colorClassName} mini\" style=\"top:{top}; left:{left}; width:{width}; height:{height};\" id=\"lessonBlockMini_{id}\" freeday=\"0\" dateID=\"{id}\"><div unselectable=\"on\"><div unselectable=\"on\" class=\"gridBlockContent\" style=\"height:{height}; width:{width};\" id=\"lessonBlockContentMini_{id}\"><\/div><div unselectable=\"on\" class=\"ypSpacer\"><\/div><\/div><\/div>-->","tpl_agenda_grid_block_hour":"<div class=\"gridBlockHour {colorClassName}\" style=\"top:{top}; left:{left}; width:{width}; height:{height};\"><div class=\"gridBlockHourTop\" style=\"height:{lineHeight}; vertical-align:middle; display:table-cell; width:{width};\">{hourTitle}<\/div><div class=\"gridBlockHourBottom\" style=\"height:{lineHeight}; line-height:{lineHeight};\">{hourValue}<\/div><\/div>","tpl_agenda_grid_block_hour_simple":"<div class=\"gridBlockHour {colorClassName}\" style=\"top:{top}; left:{left}; width:{width}; height:{height};\"><div class=\"gridBlockHourTop\" style=\"height:{height}; vertical-align:middle; display:table-cell; width:{width};\">{hourTitle}<\/div><\/div>","tpl_agenda_grid_block_content_mini":"<div id=\"weekBlock_{momentID}\" momentid=\"{momentIDelm}\" lessonid=\"{lessonID}\" unselectable=\"on\" style=\"-moz-user-select:none; -webkit-user-select:none; padding-top:{paddingTop}px;\"><div class=\"cf\"><div class=\"agendaGridBlockContentRight\"><div class=\"agendaGridBlockContentRightButton {testEndStatusClassName}\"><\/div><div class=\"agendaGridBlockContentRightButton {assignmentEndStatusClassName}\"><\/div><\/div><div class=\"agendaGridBlockContentLeft\" style=\"width:{objectWidth}px; height:{objectHeight}px;\"><div unselectable=\"on\" class=\"agendaGridBlockContentLeftCourseTitle mini\" title=\"{courseTitle}\">{course}<\/div><\/div><\/div><\/div>","tpl_agenda_grid_list_view_title":"<div class=\"agendaListViewDayTitle\" style=\"width:{width}px;\">{dayTitle}<\/div>","tpl_agenda_grid_list_view_row":"<div class=\"gridBlockListViewContainer cf\"><div class=\"gridBlockHourListView\"><div class=\"gridBlockHourListViewTop\">{hourTitle}<\/div><div class=\"gridBlockHourListViewBottom\">{hourValue}<\/div><\/div><div unselectable=\"on\" class=\"gridBlockListView {colorClassName}\" style=\"width:{width}px;\" id=\"lessonBlock_{id}\" freeday=\"0\"><div unselectable=\"on\"><div unselectable=\"on\" class=\"gridBlockContent\"  id=\"lessonBlockContent_{id}\"><div ondblclick=\"{ondblclick}\" id=\"weekBlock_{momentID}\" activityID=\"{activityID}\" dateid=\"{dateID}\" assignmentids=\"{assignmentIDs}\" momentid=\"{momentIDelm}\" lessonid=\"{lessonID}\" unselectable=\"on\" style=\"-moz-user-select:none; -webkit-user-select:none; padding-top:{paddingTop}px;\"><div class=\"cf\"><div class=\"agendaGridBlockContentRight\"><div class=\"agendaGridBlockContentRightButton {bothStartStatusClassName}\"><\/div><div class=\"agendaGridBlockContentRightButton {testEndStatusClassName}\"><\/div><div class=\"agendaGridBlockContentRightButton {assignmentEndStatusClassName}\"><\/div><\/div><div class=\"agendaGridBlockContentLeft\" style=\"width:{objectWidth}px; height:{objectHeight}px;\"><div unselectable=\"on\" class=\"agendaGridBlockContentLeftCourseTitle\" title=\"{courseTitle}\">{course}<\/div><div class=\"agendaGridBlockContentLeftSubject\" unselectable=\"on\" style=\" max-height:{subjectHeight}px; width:{subjectWidth}px;\">{subject}<\/div><\/div><\/div><div class=\"agendaGridBlockContentStatus hidden {noteStatusClassName}\" title=\"{noteStatusTitle}\" id=\"noteStatus\" style=\"width:{noteWidth}px;\">{note}<\/div><\/div><\/div><\/div><\/div><\/div>","tpl_agenda_infoform_block":"<div class=\"infoContainerBlock {class} {even} {view}\"><div class=\"infoContainerBlockDescription\">{description}<\/div>{course}<div><div class=\"infoContainerBlockInput\"><b>Aangekondigd:<\/b> {start}<\/div><\/div><div><div class=\"infoContainerBlockInput\"><b>Deadline:<\/b> {end}<\/div><\/div><\/div>","tpl_agenda_infoform_block_course":"<div><div class=\"infoContainerBlockInput\"><b>Vak:<\/b> {course}<\/div><\/div>","tpl_agenda_infoform":"<div id=\"infoContainerSubject\" class=\"infoContainers\" momentid=\"{momentID}\">{infoContainerSubjectParts}<\/div><div id=\"infoContainerNote\" class=\"infoContainers hidden\"><textarea class=\"infoContainerNoteContent\" id=\"infoContainerNoteContent\">{note}<\/textarea><\/div><div id=\"infoContainerColor\" class=\"infoContainers hidden\"><div class=\"lessonFormColorExampleTitle\">Kies een kleur voor dit vak:<\/div><div class=\"lessonFormColorExampleContainer\"><div class=\"cf\"><div class=\"lessonFormColorExample color_watermeloen\" color=\"watermeloen\"><\/div><div class=\"lessonFormColorExample color_mandarijn\" color=\"mandarijn\"><\/div><div class=\"lessonFormColorExample color_vanille\" color=\"vanille\"><\/div><div class=\"lessonFormColorExample color_munt\" color=\"munt\"><\/div><div class=\"lessonFormColorExample color_zeilen\" color=\"zeilen\"><\/div><div class=\"lessonFormColorExample color_babyroos\" color=\"babyroos\"><\/div><div class=\"lessonFormColorExample color_lavendel\" color=\"lavendel\"><\/div><div class=\"lessonFormColorExample color_zilver\" color=\"zilver\"><\/div><\/div><div class=\"cf\"><div class=\"lessonFormColorExample color_vermiljoen\" color=\"vermiljoen\"><\/div><div class=\"lessonFormColorExample color_appelsien\" color=\"appelsien\"><\/div><div class=\"lessonFormColorExample color_banaan\" color=\"banaan\"><\/div><div class=\"lessonFormColorExample color_kiwi\" color=\"kiwi\"><\/div><div class=\"lessonFormColorExample color_hemel\" color=\"hemel\"><\/div><div class=\"lessonFormColorExample color_magenta\" color=\"magenta\"><\/div><div class=\"lessonFormColorExample color_lila\" color=\"lila\"><\/div><div class=\"lessonFormColorExample color_staal\" color=\"staal\"><\/div><\/div><div class=\"cf\"><div class=\"lessonFormColorExample color_robijn\" color=\"robijn\"\"><\/div><div class=\"lessonFormColorExample color_koper\" color=\"koper\"><\/div><div class=\"lessonFormColorExample color_oker\" color=\"oker\"><\/div><div class=\"lessonFormColorExample color_augurk\" color=\"augurk\"><\/div><div class=\"lessonFormColorExample color_ultramarijn\" color=\"ultramarijn\"><\/div><div class=\"lessonFormColorExample color_rode_bosbes\" color=\"rode_bosbes\"><\/div><div class=\"lessonFormColorExample color_violet\" color=\"violet\"><\/div><div class=\"lessonFormColorExample color_lood\" color=\"lood\"><\/div><\/div><div class=\"cf\"><div class=\"lessonFormColorExample color_bordeaux\" color=\"bordeaux\"><\/div><div class=\"lessonFormColorExample color_aarde\" color=\"aarde\"><\/div><div class=\"lessonFormColorExample color_donker_goud\" color=\"donker_goud\"\"><\/div><div class=\"lessonFormColorExample color_ruccola\" color=\"ruccola\"><\/div><div class=\"lessonFormColorExample color_koningsblauw\" color=\"koningsblauw\"><\/div><div class=\"lessonFormColorExample color_fluweel\" color=\"fluweel\"><\/div><div class=\"lessonFormColorExample color_purper\" color=\"purper\"><\/div><div class=\"lessonFormColorExample color_grafiet\" color=\"grafiet\"><\/div><\/div><\/div><div class=\"lessonFormColorExampleTitle\">Kies de zichtbare elementen voor al uw vakken in de weekweergave:<\/div><div class=\"ssCheckbox lessonFormColorContentCheck checked\" form_type=\"class\">Leerkracht<\/div><div class=\"ssCheckbox lessonFormColorContentCheck checked\" form_type=\"course\">Vak<\/div><div class=\"ssCheckbox lessonFormColorContentCheck checked\" form_type=\"classroom\">Lokaal<\/div><div class=\"ssCheckbox lessonFormColorContentCheck disabled\">Lesonderwerp (steeds zichtbaar)<\/div><div class=\"lessonFormColorExampleTitle\">Voorbeeld:<\/div><div id=\"lessonFormColorExampleExample\" class=\"lessonFormColorExampleExample\"><span class=\"lessonFormColorExampleExampleClass\"><\/span><span class=\"lessonFormColorExampleExampleCourse\"><\/span><span class=\"lessonFormColorExampleExampleClassroom\"><\/span><div><\/div><\/div><\/div>","tpl_agenda_infoform_class":"<div><div style=\"margin:5px 0px 5px 0px; clear:both;\"><div class=\"infoContainerLabel\">{className}<\/div><div class=\"infoContainerInput\"><\/div><\/div><div style=\"margin-left: 15px;\"><div class=\"infoContainerLabel\">{_SUBJECT}:<\/div><div class=\"infoContainerInput\" id=\"infoContainerSubject\">{subject}<\/div><\/div><div style=\"margin-left: 15px;\"><div class=\"infoContainerLabel\">{_ASSIGNMENTS}:<\/div><div class=\"infoContainerInput\" id=\"infoContainerAssignments\">{assignments}<\/div><\/div><div style=\"margin-left: 15px;\"><div class=\"infoContainerLabel\">{_MATERIALS}:<\/div><div class=\"infoContainerInput\" id=\"infoContainerMaterials\">{materials}<\/div><\/div><\/div>","tpl_agenda_infoform_student":"<div class=\"lessonFormTitleContainer\"><div class=\"lessonFormTitleContainer\" id=\"infoFormSubTitle\"><\/div><\/div><div id=\"infoContainerTabs\" class=\"tabs\" unselectable=\"on\"><ul><li id=\"infoContainerSubjectTab\" class=\"current\" onclick=\"oAgenda.changeInfoContainerTab('Subject');\"><span unselectable=\"on\">{tabSubject}<\/span><\/li><li id=\"infoContainerNoteTab\" onclick=\"oAgenda.changeInfoContainerTab('Note');\"><span unselectable=\"on\">{tabNote}<\/span><\/li><li id=\"infoContainerColorTab\" onclick=\"oAgenda.changeInfoContainerTab('Color');\"><span unselectable=\"on\">{tabColor}<\/span><\/li><\/ul><\/div><div class=\"infoContainer\" id=\"infoContainerStudent\"><\/div><button class=\"infoContainerButton smscButton\" onclick=\"oAgenda.saveInfo();\">{_SAVE}<\/button>","tpl_agenda_lessonform_list_block":"<div name=\"assignmentListBlock\" class=\"{class}\" onclick=\"oAgenda.checkForChanges(this, 2);\" number=\"{number}\" status=\"{status}\">{shortDescription}<\/div>","tpl_agenda_listview_main":"<div class=\"listView cf\"><div class=\"listContainer\" id=\"listContainer\"><div class=\"introText\">{introText}<\/div><\/div><!--<div class=\"selectionContainer\" id=\"selectionContainer\"><div class=\"schoolyearContainer\"><div class=\"schoolyearContainerLabel\">{selectionTitleSchoolyear}:<\/div><select id=\"lessonListSchoolyear\"><option value=\"1567288800\"  start=\"2019-09-01\" stop=\"2020-08-31\" >2019-2020<\/option><option value=\"1598911200\"  start=\"2020-09-01\" stop=\"2021-08-31\" >2020-2021<\/option><option value=\"1630447200\"  start=\"2021-09-01\" stop=\"2022-08-31\" >2021-2022<\/option><option value=\"1661983200\"  start=\"2022-09-01\" stop=\"2023-08-31\" selected=\"selected\">2022-2023<\/option><option value=\"1693519200\"  start=\"2023-09-01\" stop=\"2024-08-31\" >2023-2024<\/option><option value=\"1725141600\"  start=\"2024-09-01\" stop=\"2025-08-31\" >2024-2025<\/option><option value=\"1756677600\"  start=\"2025-09-01\" stop=\"2026-08-31\" >2025-2026<\/option><option value=\"1788213600\"  start=\"2026-09-01\" stop=\"2027-08-31\" >2026-2027<\/option><option value=\"1819749600\"  start=\"2027-09-01\" stop=\"2028-08-31\" >2027-2028<\/option><\/select><\/div><div class=\"datesContainer\"><div class=\"dateContainer\"><div class=\"dateContainerLabel\">{selectionTitleFrom}:<\/div><input type=\"text\" id=\"lessonListStartDate\" \/><\/div><div class=\"dateContainer\"><div class=\"dateContainerLabel\">{selectionTitleUntil}:<\/div><input type=\"text\" id=\"lessonListEndDate\" \/><\/div><\/div><div class=\"lessonContainer\" id=\"lessonContainer\"><div class=\"lessonListTitle\">{selectionTitleOwnCourses}:<\/div><div id=\"lessonListContainerOwnCourses\" class=\"lessonListContainer loading\"><\/div><\/div><button id=\"selectionContainerButton\" class=\"selectionContainerButton smscButton blue\">{buttonTitle}<\/button><\/div>--><\/div>","tpl_agenda_grid_block_listview":"<div {clickType}=\"{ondblclick}\" classids=\"{classIDs}\" momentid=\"{momentID}\" lessonid=\"{lessonID}\" class=\"gridBlock {colorClassName}\" style=\"position:static; width:{width}; height:{height}; margin-left:7px; cursor:pointer;\" name=\"lesson_{lessonID}\" id=\"lessonBlock_{id}\"><div><\/div><div><div class=\"gridBlockContent\" style=\"height:{shadowHeight}; width:{shadowWidth};\" id=\"lessonBlockContent_{id}\"><div momentid=\"{momentID}\" unselectable=\"on\" style=\"-moz-user-select:none;\"><div style=\"float:left;\"><div style=\"height:16px; line-height:12px; overflow:hidden; font-weight:bold;\">{dateString}: {lesTitleString}<\/div><div style=\"float:left; height:30px; line-height:12px; width:{subjectWidth};\">{titleString}: {subject}<\/div><\/div><div style=\"float:right;\"><div class=\"{subjectStatusClassName}\" id=\"subjectStatus_{momentID}\" title=\"{subjectStatusTitle}\"><\/div><div class=\"{bothStartStatusClassName}\" id=\"assignmentStartStatus_{momentID}\" title=\"{bothStartStatusTitle}\"><\/div><div class=\"ypSpacer\"><\/div><div class=\"{testEndStatusClassName}\" id=\"testStartStatus_{momentID}\" title=\"{testEndStatusTitle}\"><\/div><div class=\"{assignmentEndStatusClassName}\" id=\"assignmentEndStatus_{momentID}\" title=\"{assignmentEndStatusTitle}\"><\/div><div class=\"ypSpacer\"><\/div><\/div><div class=\"ypSpacer\"><\/div><\/div><\/div><div class=\"ypSpacer\"><\/div><\/div><div><\/div><\/div>","tpl_agenda_grid_block_listview_empty":"<p>&nbsp;<\/p><p>&nbsp;<\/p><p>&nbsp;<\/p><p>&nbsp;<\/p><p align=\"center\"><img src=\"https:\/\/static6.smart-school.net\/modules\/Agenda\/themes\/default\/images\/empty.png\" width=\"48\" height=\"48\" alt=\"empty...\"><\/p><p align=\"center\" class=\"empty\">Er zijn geen items beschikbaar.<\/p>","tpl_agenda_lessonList_row":"<div class=\"lessonListRow{className}\" lessonID=\"{lessonID}\" title=\"{title}\">{title}<\/div>","tpl_agenda_filterform_row":"<div onclick=\"oFilter.handleSelection(this);\" class=\"{className}\" filterID=\"{id}\">{txt}<\/div>","tpl_print_lessonlist_row":"<div onclick=\"oPrint.onclickLesson(this);\" class=\"{className}\" lessonID=\"{lessonID}\" name=\"selectedLesson\" title=\"{title}\"><div class='divEllipsisO'><div class='divEllipsisI' title=\"{course}\">{course}<\/div><\/div><\/div>","tpl_print_assignment_types_row":"<div onclick=\"oPrint.onclickAssignmentType(this);\" class=\"{className}\" type=\"{type}\" atID=\"{atID}\"><div class='divEllipsisO'><div class='divEllipsisI' title=\"{description} ({abbreviation})\">{description} ({abbreviation})<\/div><\/div><\/div>","tpl_agenda_filtertab_class":"<div class=\"filterClassSelect {selected}\" onclick=\"oAgenda.toggleFilterClass(this);\" status=\"{status}\" classID=\"{classID}\" classNrClass=\"{classNr}\"><div class=\"filterClass\">{className}<\/div><\/div><div class=\"filterCollapse open\" onclick=\"oAgenda.collapseFilterGroup(this);\" classID=\"{classID}\" status=\"open\" title=\"{title}\"><\/div>","tpl_agenda_filtertab_group":"<div class=\"filterGroup\"><div class=\"filterTitle\">{filterTitle}<\/div>{filterRules}<\/div>","tpl_agenda_filtertab_rule":"<div class=\"filterRule ellipsis {selected}\" status=\"{status}\" {onClick} classNr=\"{classNr}\" ruleNr=\"{ruleNr}\" groupNr=\"{groupNr}\">{rule}<\/div><div class=\"filterRuleInfo\" tipKey=\"{key}\"><\/div>","tpl_agenda_filtertab_rows":"<div class=\"filterRows {fade}\" rowsid=\"{classID}\">{row}<\/div>","tpl_agenda_filtertab_row":"<div class=\"filterRow {bgColor}\">{filterGroups}<\/div>","tpl_agenda_subjecttab":"<div class=\"tabContainerBlock\"><div class=\"label small\"><span title=\"{title}\" smsctip=\"true\" class=\"catchSmscTip\">{className}<\/span><\/div><div class=\"input\"><textarea {disabled} style=\"{extraStyle}\" classid=\"{classID}\" ondrop=\"return false;\" id=\"subjectTabSubject\" momentID=\"{momentID}\" subjectFetch=\"{momentID}\" class=\"textareaSplit {textareaClass}\" onBlur=\"oAgenda.updateStudentView();\">{subject}<\/textarea><\/div><div class=\"ypSpacer\"><\/div><\/div>","tpl_agenda_notetab":"<div class=\"tabContainerBlock\"><div class=\"label small\"><span title=\"{title}\" smsctip=\"true\" class=\"catchSmscTip\">{className}<\/span><\/div><div class=\"input\"><textarea {disabled} style=\"{extraStyle}\" id=\"noteTabNote\" ondrop=\"return false\"; momentID=\"{momentID}\" noteFetch=\"{momentID}\" class=\"textareaSplit {textareaClass}\">{note}<\/textarea><\/div><div class=\"ypSpacer\"><\/div><\/div>","tpl_agenda_form_assignments_row":"<div class=\"{className}\" title=\"{title}\">{info}<\/div>","tpl_agenda_form_assignments_class":"<div class=\"assignmentClassname\">{className}:<\/div>","tpl_agenda_form_assignmentlist_block":"<div class=\"lessonFormAssignmentBlock\"><div class=\"lessonFormAssignmentBlockTitle\">{titleStart}:<\/div>{startAssignments}<\/div><div class=\"lessonFormAssignmentBlockToolbar\"><\/div><div class=\"lessonFormAssignmentBlock\"><div class=\"lessonFormAssignmentBlockTitle\">{titleEnd}:<\/div>{endAssignments}<\/div>","tpl_agenda_form_yearplan":"<div class=\"yearplanContainer\" style=\"display:{yearplanContainerStyle};\" yearplanID=\"{ypID}\" selected=\"{selected}\"><div class=\"yearplanTitle\"><div class=\"yearplanText\">{ypTitle} <span class=\"yearplanHours\">({hours})<\/span><\/div><div class=\"yearplanToggle up\" onclick=\"oAgenda.toggleYearplanBlock(this);\" status=\"closed\" yearplanID=\"{ypID}\" title=\"{title}\"><\/div><\/div>{details}<\/div>","tpl_agenda_form_yearplan_details":"<div class=\"yearplanDetails\"><div class=\"yearplanDetailsTitle\">{detailsTitle}<\/div><div class=\"yearplanDetailsRows\">{detailsRows}<\/div><\/div>","tpl_agenda_form_yearplan_cell":"<td width=\"{pct}%\"><div class=\"yearplanBlockCell {cellClass}\">{colTitle}<\/div><\/td>","tpl_agenda_form_yearplan_fixedcells":"<td><div class=\"yearplanBlockCell extra\">{hoursReserved}<\/div><\/td><td><div class=\"yearplanBlockCell extra {classColor}\">{hoursEffective}<\/div><\/td>","tpl_agenda_tooltip_row":"<div class=\"tooltip {className}\"><div class='divEllipsisO'><div class='divEllipsisI' title=\"{title}\">{text}<\/div><\/div><\/div>","tpl_agenda_notes_row":"<div class=\"smsc-table__row notesRow\" jqueryCatcherNotes1=\"1\"><div class=\"notesRowCell smsc-table__cell notesRowCellDate\">{date}<\/div><div class=\"notesRowCell smsc-table__cell notesRowCellCourse\">{course}<\/div><div class=\"notesRowCell smsc-table__cell notesRowCellNote\" id=\"notesRowCellNote\" jqueryCatcherNotes3=\"1\">{note}<\/div><div class=\"notesRowCell smsc-table__cell notesRowCellSubject\" id=\"notesRowCellSubject\" jqueryCatcherNotes2=\"1\">{subject}<\/div><\/div>","tpl_agenda_form_assignments_student_row":"<div catch=\"1\" class=\"assignmentStudentRow {className}\" studentclassid=\"{classID}\" userid=\"{userID}\" status=\"{status}\" statusOrig=\"{statusOrig}\" onclick=\"oAgenda.toggleAssignmentStudent(this);\" title=\"{userName}\">{userName}<\/div>","tpl_agenda_form_assignments_student_class":"<div catch=\"1\" class=\"assignmentStudentClassName\" classid=\"{classID}\">{className}<\/div><div catch=\"1\" class=\"assignmentStudentSelectAll\" classid=\"{classID}\" status=\"0\" onclick=\"oAgenda.assignmentStudentsSelectAll(this);\">{selectAll}<\/div>","tpl_agenda_form_res_cat":"<div class=\"formResCat\" id=\"{catID}\" onclick=\"oReservations.toggleCat(this);\" status=\"0\" title=\"{title}\" hasCapacity=\"{hasCapacity}\">{name}<\/div>","tpl_agenda_form_res_items":"<div class=\"formResItems\" id=\"resItems_{catID}\">{items}<\/div>","tpl_agenda_form_res_item":"<div class=\"formResItem {className} color_{color}\" id=\"item_{itemID}\" style=\"background-image: url({icon});\" onclick=\"oReservations.toggleItem(this);\" catID=\"{catID}\" itemID=\"{itemID}\" catNR=\"{catNR}\" itemNR=\"{itemNR}\" status=\"{status}\" title=\"{title}\" capTotal=\"{capTotal}\" capFree=\"{capFree}\" capRes=\"{capFree}\" capSug=\"{capSug}\" capOth=\"{capOth}\"><div class=\"formResItemInner {classNameInner}\" id=\"resItem_{itemID}\"><div class='divEllipsisO'><div class='divEllipsisI' title=\"{titleInner}\">{name}<\/div><\/div><\/div><\/div>","tpl_agenda_lessonEditform_violation":"<div class=\"lessonEditFormViolation selected\" status=\"1\" momentid=\"{momentID}\" onclick=\"oAgenda.toggleViolation(this);\">{title}<\/div>","tpl_agenda_form_material_class":"<div class=\"klas {collapseClass}\"><div class=\"title\">{classTitle}<\/div><div class=\"append {collapseClass}\" onclick=\"oAgenda.addMaterialItem(event, this);\" classPos=\"{classPos}\">{_MATERIAL_APPEND}<\/div><\/div>","tpl_agenda_form_material_item":"<div class=\"item {itemClass}\" materialID=\"{materialID}\" material=\"{material}\" onMouseOver=\"{onMouseOver}\" onMouseOut=\"{onMouseOut}\"><div class=\"title {itemTitleClass}\" style=\"{itemStyle}\" title=\"{title}\"><div class=\"top\"><a target=\"_blank\" class=\"ssLink\" href=\"{link}\" title=\"{itemTitle}\">{itemTitle}<\/a><\/div><div class=\"bottom\" title=\"{course}\">{course}<\/div><\/div><div class=\"sort\"><\/div><div class=\"delete\" onclick=\"oAgenda.deleteMaterialItem(this);\" itemPos=\"{itemPos}\" itemPosXml=\"{itemPosXml}\" classPos=\"{classPos}\"><\/div><\/div>","tpl_agenda_form_material_item_wopi":"<div class=\"item {itemClass}\" materialID=\"{materialID}\" material=\"{material}\" onMouseOver=\"{onMouseOver}\" onMouseOut=\"{onMouseOut}\"><div class=\"title {itemTitleClass}\" style=\"{itemStyle}\" title=\"{title}\"><div class=\"top\"><a target=\"_blank\" class=\"ssLink\" href=\"{wopilink}\">{itemTitle}<\/a>&nbsp;<a target=\"_blank\" class=\"ssLink\" href=\"{link}\"><img src='\/smsc\/img\/arrow_green_download\/arrow_green_download_16x16.png' border='0'><\/a><\/div><div class=\"bottom\">{course}<\/div><\/div><div class=\"sort\"><\/div><div class=\"delete\" onclick=\"oAgenda.deleteMaterialItem(this);\" itemPos=\"{itemPos}\" itemPosXml=\"{itemPosXml}\" classPos=\"{classPos}\"><\/div><\/div>","tpl_agenda_list_material_item":"<div class=\"item {itemClass}\"><div class=\"title {itemTitleClass}\" style=\"{itemStyle}\" title=\"{title}\"><a target=\"{target}\" class=\"ssLink\" href=\"{link}\">{itemTitle}<\/a><\/div><div class=\"star {starClass}\" onclick=\"oAgenda.markMaterial(this);\" materialID=\"{materialID}\"><\/div><\/div>","tpl_agenda_list_material_item_wopi":"<div class=\"item {itemClass}\"><div class=\"title {itemTitleClass}\" style=\"{itemStyle}\" title=\"{title}\"><a target=\"_blank\" class=\"ssLink\" href=\"{wopilink}\">{itemTitle}<\/a>&nbsp;<a target=\"{target}\" class=\"ssLink\" href=\"{link}\"><img src='\/smsc\/img\/arrow_green_download\/arrow_green_download_16x16.png' border='0'><\/a><\/div><div class=\"star {starClass}\" onclick=\"oAgenda.markMaterial(this);\" materialID=\"{materialID}\"><\/div><\/div>","tpl_agenda_list_material_item_day":"<div class='materialItemDay'>{dayTitle}<\/div><div class='materialItemDayList'>{dayCourses}<\/div>","tpl_agenda_list_material_item_day_course":"<div class='materialItemDayCourse courseColor_{colorClass}'><div class='materialItemDayCourse_header'><span class='materialItemDayCourse_header_title'>{courseTitle}: <\/span>{courseDescription}<\/div>{materialItems}<\/div><div class='materialItemDayCourseSpacer'><\/div>","tpl_agenda_infoform_class_material":"<div class=\"item {itemClass}\"><div class=\"title {itemTitleClass}\" style=\"{itemStyle}\"><div class=\"top\"><a target=\"_blank\" class=\"ssLink\" href=\"{link}\">{itemTitle}<\/a><\/div><div class=\"bottom\">{course}<\/div><\/div><\/div>","tpl_agenda_infoform_class_material_wopi":"<div class=\"item {itemClass}\"><div class=\"title {itemTitleClass}\" style=\"{itemStyle}\"><div class=\"top\"><a target=\"_blank\" class=\"ssLink\" href=\"{wopilink}\">{itemTitle}<\/a>&nbsp;<a target=\"_blank\" class=\"ssLink\" href=\"{link}\"><img src='\/smsc\/img\/arrow_green_download\/arrow_green_download_16x16.png' border='0'><\/a><\/div><div class=\"bottom\">{course}<\/div><\/div><\/div>"};
+		var _ERROR_LESSONS_SHOW							= 'Er dient minimaal 1 les geselecteerd te zijn.';
+		var _ERROR_DATEPICKER_START						= 'De begindatum mag niet later zijn dan de einddatum.';
+		var _ERROR_DATEPICKER_END						= 'De einddatum mag niet vroeger zijn dan de begindatum.';
+		var _ERROR_DATEPICKER_START_WEEK				= 'De beginweek mag niet later zijn dan de eindweek.';
+		var _ERROR_DATEPICKER_END_WEEK					= 'De eindweek mag niet vroeger zijn dan de beginweek.';
+		var _ERROR_ASSIGNMENTS							= 'Gelieve minimaal 1 type taak of toets te selecteren.';
+		var _SUBJECT									= 'Onderwerp';
+		var _ASSIGNMENTS								= 'Taken en toetsen';
+		var _DIVTITLE_SUBJECT_STATUS0					= 'Ontbrekend lesonderwerp';
+		var _DIVTITLE_SUBJECT_STATUS1					= 'Ingevuld lesonderwerp';
+		var _DIVTITLE_NOTE_STATUS0						= 'Vervanguur of notitie toevoegen';
+		var _DIVTITLE_NOTE_STATUS1						= 'Ingevulde notitie';
+		var _DIVTITLE_BOTH_START						= 'Opgavemomenten';
+		var _DIVTITLE_ASSIGNMENT_END					= 'Taak of opdracht';
+		var _DIVTITLE_TEST_END							= 'Toets';
+		var _ERROR_DATEPICKER							= 'U heeft een foutieve datum geselecteerd. De tot en met-datum dient later te zijn dan de vanaf-datum.';
+		var _ERROR_ASSIGNMENT_ADD						= 'Het toevoegen van de taak of toets is mislukt omdat er geen deadline is geselecteerd.';
+		var _ERROR_ASSIGNMENT_DESC_ADD					= 'Gelieve een omschrijving voor de taak of toets op te geven.';
+		var _SELECTION_TITLE_OWN_COURSES				= 'Mijn vakken';
+		var _SELECTION_TITLE_SCHOOLYEAR					= 'Schooljaar';
+		var _SELECTION_TITLE_FROM						= 'Vanaf';
+		var _SELECTION_TITLE_UNTIL						= 'Tot en met';
+		var _SELECTION_SHOW_SELECTION					= 'Toon selectie';
+		var _SELECTION_INTRO_TEXT						= 'Klik op de blauwe knop rechtsonder om uw vakken te tonen.';
+		var _SELECTION_STARTDATE						= '2022-10-25';
+		var _SELECTION_ENDDATE							= '2022-11-01';
+		var _FILTER_DISABLE								= 'Toon mijn uurrooster';
+		var _FILTER_FORM_TITLE							= 'Selecteer een uurrooster uit de lijst';
+		var _NO_YEARPLANS								= 'Er kunnen geen jaarplannen gevonden worden om te koppelen.';
+		var _NO_YEARPLAN_MOMENTS						= 'Er kunnen lessen gevonden worden om te koppelen.';
+		var _AGENDA_YEARPLANROW_TITLE					= 'Koppel hier deze les aan de jaarplandetails.';
+		var _FILTER_TITLE_CLASS							= 'Klasrooster';
+		var _FILTER_TITLE_CLASSROOM						= 'Lokaalrooster';
+		var _FILTER_TITLE_TEACHER						= 'Leerkrachtenrooster';
+		var _ALERT_FORM_FLOATING_ASSIGNMENTS			= 'Gevonden conflicten';
+		var _ALERT_FORM_EXISTING_MOMENTS				= 'Bestaande lessen';
+		var _ALERT_FIRST_SELECT_ASS						= 'Gelieve eerst een item te selecteren aan de linkerkant.';
+		var _ASSIGNMENTS								= 'Taken en toetsen';
+		var _CHOOSE										= 'Kies hier het tijdstip';
+		var _FILTER_NO_CLASS							= 'Er zijn geen klassen gevonden';
+		var _FILTER_NO_CLASSROOM						= 'Er zijn geen klaslokalen gevonden';
+		var _FILTER_NO_TEACHER							= 'Er zijn geen leerkrachten gevonden';
+		var _PRINT_FORM_TITLE							= 'Afdrukken';
+		var _PRINT_FORM_TITLE_SIDEBOX					= 'Instellingen voor afdrukken';
+		var _PRINT_NO_LESSONS							= 'Geen lessen gevonden';
+		var _PRINT_NO_CLASSES							= 'Geen klassen gevonden';
+		var _ALERT_FLOAT_TITLE							= 'Onderstaande items zijn ontkoppeld. Selecteer een nieuwe les om de koppeling te herstellen.';
+		var _ASSIGNMENTS_NONE							= 'Geen taken en toetsen ingegeven.';
+		var _DEADLINE_FOR_CLASS							= ' voor klas ';
+		var _FORM_SUBJECTCOPY_CONFIRM					= 'U heeft gekozen voor hetzelfde onderwerp te gebruiken voor alle klassen maar de onderwerpen zijn momenteel verschillend. Wilt u hiervoor het eerste onderwerp gebruiken?';
+		var _FORM_NOTECOPY_CONFIRM						= 'U heeft gekozen voor dezelfde notitie te gebruiken voor alle klassen maar de notities zijn momenteel verschillend. Wilt u hiervoor de eerste notitie gebruiken?';
+		var _FORM_DEADLINES_COPY						= 'U heeft gekozen om dezelfde deadline te gebruiken voor alle klassen. Wilt u hiervoor de deadline van de eerste klas gebruiken?';
+		var _FORM_DEADLINES_COPY_DIFFERENT				= 'U kunt de deadline van de eerste klas niet gebruiken voor alle klassen omdat deze niet overal voorkomt. Gelieve een andere deadline te selecteren of de taak of toets apart toe te voegen.';
+		var _FORM_DEADLINES_COPY_LIMITS					= 'U kunt in dit geval niet dezelfde deadline gebruiken voor alle klassen omdat voor sommige klassen een limiet is opgelegd die al overschreden werd.';
+		var _DIALOG_DEADLINES							= 'Deadline selecteren';
+		var _DIALOG_ASSIGNMENT_DESC						= 'Omschrijving invullen';
+		var _FORM_SIDEBOX_TITLE_START					= 'Taken en toetsen aangekondigd tijdens deze les';
+		var _FORM_SIDEBOX_TITLE_END						= 'Taken en toetsen op deze les';
+		var _FORM_SIDEBOX_START_NONE					= 'Er zijn tijdens deze les nog geen taken of toetsen aangekondigd.';
+		var _FORM_SIDEBOX_STOP_NONE						= 'Er zijn voor deze les nog geen taken of toetsen.';
+		var _FORM_YEARPLAN_HOURS_RESERVED				= 'Uren voorzien';
+		var _FORM_YEARPLAN_HOURS_EFFECTIVE				= 'Uren effectief';
+		var _FORM_LESHOURS								= 'lesuren';
+		var _FORM_LESHOUR								= 'lesuur';
+		var _FORM_LINKED								= 'gekoppeld';
+		var _FORM_YEARPLAN_ROWGROUPS_EMPTY				= 'In dit jaarplan zijn nog geen lessenreeksen opgegeven.';
+		var _FORM_NODEADLINES							= 'Er zijn geen deadlines voor deze les gevonden.';
+		var _ALERT_ASS_EMPTY							= 'Er zijn op dit moment geen ontkoppelde taken en toetsen.';
+		var _ALERT_SUBJECTS_EMPTY						= 'Er zijn op dit moment geen ontkoppelde lesonderwerpen.';
+		var _ALERT_MATERIALS_EMPTY						= 'Er is op dit moment geen ontkoppeld lesmateriaal.';
+		var _ALERT_NOTES_EMPTY							= 'Er zijn op dit moment geen ontkoppelde notities.';
+		var _ALERT_NO_EXISTING_ITEMS					= 'Er konden geen bestaande lessen worden gevonden.';
+		var _FORM_ASS_WEIGHT_TITLE_NULL					= 'U heeft op dit moment geen taken en toetsen gepland in de komende 30 dagen.';
+		var _FORM_CHANGES_MESSAGE						= 'U heeft een taak of toets ingevuld of aangepast zonder deze op te slaan. Wilt u verder gaan zonder deze op te slaan?';
+		var _FORM_CHANGES_MESSAGE_GLOBAL				= 'U heeft wijzigingen aangebracht voor dit lesuur zonder deze op te slaan. Wilt u verder gaan zonder deze op te slaan?';
+		var _FORM_CHANGES_TITLE							= 'Wijzigingen opslaan';
+		var _YES										= 'Ja';
+		var _NO											= 'Neen';
+		var _OK											= 'OK';
+		var _TOOLTIP_NOINFO								= 'Er zijn nog geen lesonderwerpen, taken of toetsen aangekondigd.';
+		var _AGENDA_NOTES_CHOOSE_CLASSES				= 'Kies een klas';
+		var _AGENDA_NOTES_CHOOSE_COURSES				= 'Kies een vak';
+		var _AGENDA_NOTES_EMPTY							= 'De huidige selectie bevat geen notities.';
+		var _AGENDA_NOTES_TITLE							= 'Mijn notities';
+		var _AGENDA_FILTER_M							= 'Mannelijk';
+		var _AGENDA_FILTER_F							= 'Vrouwelijk';
+		var _AGENDA_TAB_COLLAPSE_HIDE					= 'Inklappen';
+		var _AGENDA_TAB_COLLAPSE_SHOW					= 'Uitklappen';
+		var _TOGGLE_SUBJECT_LABEL_HIDE					= 'Verberg ingevulde lesonderwerpen';
+		var _TOGGLE_SUBJECT_LABEL						= 'Toon ingevulde lesonderwerpen';
+		var _SUBJECT_NONE								= 'Geen lesonderwerp ingegeven.';
+		var _FORM_CHANGES_YP_COPY_SUBJECT_TITLE			= 'Lesonderwerp kopiëren';
+		var _FORM_CHANGES_YP_COPY_SUBJECT_MSG			= 'Lesonderwerpen uit het jaarplan worden automatisch ingevuld in de schoolagenda. U heeft al een lesonderwerp ingevuld.';
+		var _FORM_CHANGES_YP_COPY_SUBJECT_MSG2			= 'Wat wilt u met het lesonderwerp doen?';
+		var _IGNORE										= 'Niet wijzigen';
+		var _OVERWRITE									= 'Overschrijven';
+		var _ADD										= 'Aanvullen';
+		var _AGENDA_ASSIGNMENT_STUDENTS_EMPTY			= 'Er zijn geen leerlingen gevonden voor deze klas.';
+		var _FORM_TITLE_PUPILS_ALL						= 'Alle leerlingen';
+		var _AGENDA_FILTER_STUDENTS_ACTIVE				= 'Let op: filter actief!';
+		var _FORM_RES_CAT_OPEN							= 'Toon alle items in deze categorie';
+		var _FORM_RES_CAT_CLOSE							= 'Verberg alle items in deze catergorie';
+		var _FORM_RES_EMPTY								= 'Er zijn nog geen items aan het reserveringssysteem toegevoegd';
+		var _FORM_RES_TITLE_BLOCKED						= 'Conflicten met blokkeringsrooster';
+		var _FORM_RES_TITLE_OTHER						= 'Conflicten met reserveringen van anderen';
+		var _FORM_RES_TITLE_REPL						= 'Conflicten met eigen herhalende reserveringen';
+		var _FORM_SAVE_RES_TITLE						= 'Opslaan reserveringen';
+		var _FORM_SAVE_RES_BUTTON_EDIT					= 'Aanpassen';
+		var _FORM_SAVE_RES_BUTTON_CONT					= 'Ga verder';
+		var _FORM_RES_CAP_COMMENT_FROM					= 'van';
+		var _FORM_RES_CAP_COMMENT_AVAIL					= 'beschikbaar';
+		var _FORM_SAVE_RES_LIMIT_TITLE					= 'Capaciteit overschreden!';
+		var _FORM_SAVE_RES_LIMIT						= 'U heeft een capaciteit gekozen die hoger ligt dan het aantal toegelaten. Gelieve een lagere waarde te kiezen.';
+		var _FORM_PRINT_FAILED_TXT						= 'Het samenstellen van het PDF-bestand is mislukt.';
+		var _FORM_PRINT_FAILED_TITLE					= 'Afdruk';
+		var _MAKE_YOUR_CHOICE							= 'Maak uw keuze';
+		var _AGENDA_FREE_DEADLINE_DESC					= '(klik hier om een andere deadline te selecteren)';
+		var _FREE_DEADLINES_VIOLATION_TITLE				= 'Deadlines';
+		var _FREE_DEADLINES_VIOLATION_MSG				= 'De deadlines kunnen niet worden gebruikt voor onderstaande klassen omdat de limiet is bereikt.';
+		var _ALERTMSGTITLE								= 'Melding';
+		var _BUTTONCONFIRM								= 'OK';
+		var _AGENDA_FREE_DEADLINE_TITLE					= 'Kies een andere deadline.';
+		var _AGENDA_LESSONEDIT_DIALOG_TITLE				= 'Vervanguur plannen';
+		var _AGENDA_LESSONEDIT_DIALOG_HTML				= 'Gelieve een klas, leerkracht, vak en klaslokaal te selecteren alvorens op te slaan.';
+		var _NO_COURSES_FOUND							= 'Geen vakken gevonden';
+		var _unavailableAssignmentTypes					= '{"3":{"atID":"3","description":"Grote opdracht","abbreviation":"GOD","type":"0","sort":"2","visibility":"0"},"4":{"atID":"4","description":"Grote overhoring","abbreviation":"GOH","type":"1","sort":"3","visibility":"0"},"2":{"atID":"2","description":"Controletoets","abbreviation":"CT","type":"1","sort":"4","visibility":"0"}}';
+		</script>
+            <script type="text/javascript">var _LNG_ERROR_TITLE= 'Melding';var _LNG_ERROR_MSG= 'Er is een onbekende fout opgetreden waardoor de gevraagde actie niet kon worden uitgevoerd. Vernieuw de pagina (F5) of meld u opnieuw aan indien uw sessie verlopen is.';var _LNG_PHOTOSTRIPNAVLEFT = 'Navigeer links';var _LNG_PHOTOSTRIPNAVRIGHT = 'Navigeer rechts';var _LNG_PHOTOSTRIPGOTOALBUM = 'Ga naar album';var _LNG_PHOTOSTRIPCLICKTOCLOSE = 'Klik om te sluiten';var _LNG_PHOTOSTRIPCLICKTOENLARGE = 'Klik om te vergroten';var _LNG_FOLDERFILESTRIPCLICKFOLDER = 'Klik om deze map binnen te gaan';var _LNG_FOLDERFILESTRIPCLICKFILE = 'Klik om dit bestand te downloaden';var _LNG_FOLDERFILESTRIPCLICKGOUP = 'Klik om een niveau naar boven te gaan';var _LNG_FOLDERFILESTRIPCLICKGOUP_TEXT = 'Terug naar bovenliggende map';var _LNG_FOLDERFILESTRIPCLICKFILE_OPEN = 'Klik om dit bestand te openen';var _LNG_FOLDERFILESTRIPNOCONTENT = 'Deze map is leeg';var _LNG_LIGHTBOX_IMAGE= 'Afbeelding';var _LNG_LIGHTBOX_OF= 'van';</script>
+            <script type="text/javascript">$.extend(true, SMSC, { lang : {"_FORM_ALLOW_ASSIGNMENTS_TITLE":"Opgelet!","_FORM_ALLOW_ASSIGNMENTS_MESSAGE":"Het is niet mogelijk om in het verleden een taak of toets toe te voegen.","_FORM_ASSIGNMENTTYPE_UNAVAILABLE_TITLE":"Type van taak of toets niet meer beschikbaar","_FORM_ASSIGNMENTTYPE_UNAVAILABLE_MESSAGE":"Het type '___TYPE___' is niet meer beschikbaar voor taken en toetsen. Contacteer uw Smartschoolbeheerder voor meer informatie.<br\/><br\/>Klik op 'Wijzigen' om een nieuw type voor deze taak of toets te kiezen en wijzigingen aan te brengen.","_FORM_ASSIGNMENTTYPE_UNAVAILABLE_BUTTON":"Wijzigen","_FORM_ASSIGNMENTTYPE_UNAVAILABLE_BUTTON_CANCEL":"Annuleren","_ASS_FREE_WARNING":"Opgelet: nieuwe situatie door roosterwijziging","_FORM_SUBJECT_SPLIT_SUBJECT_NEXTLESSON_HOUR":"aansluitende lessen","_FORM_SUBJECT_SPLIT_SUBJECT_NEXTLESSON_DAY":"alle lessen vandaag","_FORM_SUBJECT_SPLIT_SUBJECT_NEXTLESSON_WEEK":"toekomstige lessen deze week","_FORM_SUBJECT_SPLIT_SUBJECT_NEXTLESSON_WEEKLESSONS":"toekomstige lessen deze week met identieke vaknaam","_FORM_SUBJECT_SPLIT_SUBJECT_NEXTLESSON_NEXT":"de volgende les","_ACT_CLASSES":"Klassen","_ACT_TEACHERS":"Leerkrachten","_ACT_CLASSES_NO_SELECT":"Geen klassen geselecteerd","_ACT_TEACHERS_NO_SELECT":"Geen leerkrachten geselecteerd","_MATERIAL_APPEND":"Lesmateriaal toevoegen","_FORM_MATERIALCOPY_CONFIRM":"U heeft gekozen om hetzelfde lesmateriaal te gebruiken voor alle klassen. De verschillende klassen hebben niet hetzelfde lesmateriaal. Klik op 'OK' om bij alle klassen het lesmateriaal van de eerste klas te plaatsen.","_FORM_MATERIALDELETE_CONFIRM":"Bent u zeker dat u dit lesmateriaal wilt verwijderen?","_MATERIALS":"Lesmateriaal","_MATERIALS_NONE":"Geen lesmateriaal beschikbaar.","_AGENDA_MATERIAL_INVISIBLE":"Dit item is onzichtbaar voor leerlingen.","_AGENDA_LESSONEDIT_REPLACE_SAVE_OK":"Het vervanguur werd correct opgeslagen.","_AGENDA_LESSONEDIT_REPLACE_SAVE_NOK":"Het vervanguur kon niet worden opgeslagen.","_AGENDA_LESSONEDIT_SOURCEMANUAL_SAVE_OK":"De eigen activiteit werd correct opgeslagen.","_AGENDA_LESSONEDIT_SOURCEMANUAL_SAVE_NOK":"Het opslaan van de eigen activiteit is mislukt.","_AGENDA_LESSON_EDITFORM_SUBTITLE":"Maak uw keuze","_AGENDA_LESSON_EDITFORM_SUBTITLE_REPLACE":"Vervanguur plannen","_AGENDA_LESSON_EDITFORM_SUBTITLE_SOURCEMANUAL":"Eigen activiteit plannen","_AGENDA_LESSON_EDITFORM_SUBTITLE_NOTE":"Notitie toevoegen","_AGENDA_LESSONEDIT_DIALOG_TITLE":"Vervanguur plannen","_AGENDA_LESSONEDIT_DIALOG_HTML":"Gelieve een klas, leerkracht, vak en klaslokaal te selecteren alvorens op te slaan.","_AGENDA_LESSONEDIT_DIALOG_NOTE_TITLE":"Notitie toevoegen","_AGENDA_LESSONEDIT_DIALOG_NOTE_HTML":"De inhoud van de notitie mag niet leeg zijn.","_AGENDA_LESSONEDIT_DIALOG_ACTIONS_HTML":"Bij het opslaan wordt de geselecteerde les verwijderd. Het lesonderwerp, taken en toetsen worden ontkoppeld en deze kunnen opnieuw ingepland worden. De niet opgeslagen gegevens in de andere tabbladen gaan verloren.<br><br>Klik op 'OK' om dit te bevestigen.","_AGENDA_LESSONEDIT_OVERVIEW_REPLACE_TITLE":"Vervanguur plannen","_OK":"OK","_CANCEL":"Annuleer","_SELECT_ALL":"Selecteer alles","_MATERIAL_HIDDEN":"Lesmateriaal verborgen","_AGENDA_MATERIAL_INTRO":"Klik op de blauwe knop rechtsonder om uw lesmateriaal te tonen.","_AGENDA_MATERIAL_EMPTY":"Er werd geen lesmateriaal gevonden voor de opgegeven periode.","_ADD_MANUAL_EMPTY":"Er zijn op dit moment geen eigen activiteiten.","_ADD_ERROR_SAVE":"Het verwijderen van de eigen activiteit is mislukt.","_ADD_OK_SAVE":"De eigen activiteit werd correct verwijderd.","_ADD_SELECT_NO_TEACHER":"U heeft geen leerkrachten toegevoegd","_ADD_SELECT_NO_CLASS":"U heeft geen klassen toegevoegd","_ADD_ERROR_HOUR":"Gelieve een lesuur te selecteren.","_ADD_ERROR_DATE":"Gelieve een datum in de toekomst te selecteren.","_ADD_ERROR_DATE_WEEKDAY":"Gelieve een weekdag te selecteren.","_ADD_ERROR_COURSE":"Gelieve een vak op te geven.","_ADD_ERROR_ISTEACHER":"Deze persoon kan niet worden gekozen omdat deze persoon geen leerkracht is.","_ADD_ERROR_TEACHER_UNTIS":"Deze persoon heeft nog geen Roostercode.","_ADD_ERROR_CLASS_UNTIS":"Deze klas heeft nog geen Roostercode.","_ADD_SAVE_OK":"De nieuwe les werd correct toegevoegd aan de schoolagenda.","_ADD_SAVE_NOTOK":"Het opslaan van de nieuwe les is mislukt.","_ADD_OPTION_EMPTY_HOUR":"Selecteer een lesuur","_ADD_OPTION_EMPTY_CLASSROOM":"Geef manueel een locatie op","_ADD_OPTION_NO_CLASSROOM":"Niet van toepassing","_ERROR_DATEPICKER_START":"De begindatum mag niet later zijn dan de einddatum.","_ERROR_DATEPICKER_END":"De einddatum mag niet vroeger zijn dan de begindatum.","_ADD_SAVE":"Activiteiten toevoegen","_ADD_SAVE_CONFIRM":"Eventuele lessen die binnen de gekozen periode vallen zullen worden overschreven. Indien u achteraf kiest om de activiteit terug te verwijderen zullen deze gegevens niet hersteld kunnen worden.<br><br>Gaat u hiermee akkoord?","_YES":"Ja","_NO":"Neen","_ADD_DELETE_CONFIRM":"U staat op het punt om een eigen activiteit te verwijderen. Er zal een leeg lesuur gecre\u00eberd worden. Wilt u dit uitvoeren?","_ADD_DELETE":"Verwijderen eigen activiteit","_AGENDA_ADD_TITLE_DELETE":"Verwijder deze eigen activiteit","_AGENDA_ADD_TITLE_EDIT":"Wijzig deze eigen activiteit","_ADD_HOUR":"Lesuur","_ADD_SAVE_CONFIRM_TEACHERS_CLASSES":"U dient minimaal \u00e9\u00e9n klas en\/of leerkracht aan te duiden.","_ADD_SAVE_CONFIRM_TEACHERS":"U heeft geen leerkrachten geselecteerd waardoor de activiteit alleen voor de geselecteerde klassen (leerlingen) tevoorschijn zal komen. Wilt u hiermee doorgaan?","_ADD_SAVE_CONFIRM_CLASSES":"U heeft geen klassen geselecteerd waardoor de activiteit alleen voor de geselecteerde leerkrachten tevoorschijn zal komen. Wilt u hiermee doorgaan?","_ADD_EDIT_ACTIVITY":"Wijzig activiteit","_ADD_ADD_ACTIVITY":"Nieuwe activiteit","_ADD_DEL_TITLE":"Verwijderde leerkracht","_ADD_DEL_TITLE_CLASS":"Verwijderde klas","_AGENDA_ADD_DIFF_SY_MSG":"U selecteerde een datumbereik binnen een ander schooljaar. De geselecteerde lesuren en lokalen worden hierdoor verwijderd. Klik op 'OK' om door te gaan.","_AGENDA_ADD_DIFF_SY_TITLE":"Opgelet","_ADD_ERROR_DATE_TITLE":"Opgelet","_AGENDA_LESSON_ACTIONS_NOACTIONS":"Op dit lesuur kunt u geen acties uitvoeren.","_SKIP":"Overslaan","_AGENDA_LESSONMATERIAL_CHOOSE":"Maak uw keuze","_AGENDA_LESSONMATERIAL_MYCOURSES":"Mijn vakken","_AGENDA_LESSONMATERIAL_ADD_SELECTION":"Selectie toevoegen","_AGENDA_SHOW_INFO_NO_CONTENT_FOR_STUDENT":"Er is geen inhoud voor deze les beschikbaar voor jou.","_MAANDAG":"maandag","_DINSDAG":"dinsdag","_WOENSDAG":"woensdag","_DONDERDAG":"donderdag","_VRIJDAG":"vrijdag","_ZATERDAG":"zaterdag","_ZONDAG":"zondag","_MAA_3":"maa","_DIN_3":"din","_WOE_3":"woe","_DON_3":"don","_VRI_3":"vri","_ZAT_3":"zat","_ZON_3":"zon","_JANUARI":"januari","_FEBRUARI":"februari","_MAART":"maart","_APRIL":"april","_MEI":"mei","_JUNI":"juni","_JULI":"juli","_AUGUSTUS":"augustus","_SEPTEMBER":"september","_OKTOBER":"oktober","_NOVEMBER":"november","_DECEMBER":"december","_JAN":"jan","_FEB":"feb","_MAA":"maa","_APR":"apr","_MEI_SHORT":"mei","_JUN":"jun","_JUL":"jul","_AUG":"aug","_SEP":"sep","_OKT":"okt","_NOV":"nov","_DEC":"dec","lng_calendar_maandag":"M","lng_calendar_dinsdag":"D","lng_calendar_woensdag":"W","lng_calendar_donderdag":"D","lng_calendar_vrijdag":"V","lng_calendar_zaterdag":"Z","lng_calendar_zondag":"Z","_EXPORT_AGENDA":"Exporteer schoolagenda","_AGENDA_FUTURETASKS_NORESULTS":"_AGENDA_FUTURETASKS_NORESULTS"}});$.extend(true, SMSC, { tpl : {"lessonEditFormContent":"<div class=\"lessonEditFormTitleContainer\"><div class=\"lessonEditFormTitleContainer\" id=\"lessonEditFormSubTitle\"><\/div><\/div><div class=\"lessonEditContainerOverview\" id=\"lessonEditContainerOverview\"><div class=\"lessonEditContainerOverviewSubContainer\"><div class=\"lessonEditContainerOverviewNote\" id=\"lessonEditContainerOverviewNote\" type=\"Note\" onmouseover=\"oLessonEdit.mouseoverEditType(this);\" onmouseout=\"oLessonEdit.mouseoutEditType(this);\" onclick=\"oLessonEdit.gotoEditType(this);\"><div class=\"lessonEditContainerOverviewTitle\">Notitie toevoegen<\/div><div class=\"lessonEditContainerOverviewInfo\" id=\"lessonEditContainerOverviewInfoNote\">Maak een notitie op een vrij lesuur. Handig om een vergadering, todo of andere afspraak te noteren die u anders misschien zou vergeten.<\/div><\/div><\/div><\/div><div class=\"lessonEditContainerNote\" id=\"lessonEditContainerNote\"><div class=\"lessonEditContainerNoteContent\"><textarea class=\"lessonEditContainerNoteContent\" id=\"lessonEditContainerNoteContent\"><\/textarea><\/div><\/div><div id=\"lessonEditBackButton\" class=\"lessonEditBackButton ssLink\" onclick=\"oLessonEdit.backLessonEdit();\">Vorige<\/div><button id=\"lessonEditSaveButton\" class=\"smscButton blue lessonEditSaveButton\" onclick=\"oLessonEdit.saveLessonEdit(); return false;\">Opslaan<\/button>","lessonEditFormSourceManualContent":"<div class=\"tabs\" id=\"addTabs\"><ul><li id=\"tab1\" class=\"current\"><span onclick=\"oAdd.selectTab(1);\" edit=\"0\" lessonid=\"0\">Nieuwe activiteit<\/span><\/li><li id=\"tab2\" class=\"\"><span onclick=\"oAdd.selectTab(2);\">Huidige activiteiten<\/span><\/li><\/ul><\/div><!-- TAB 1 --><div class=\"ypSpacer\" style=\"height:10px;\">&nbsp;<\/div><div class=\"addTabContainer\" id=\"addTab1\" style=\"clear:both;\"><div class=\"addBlockTitle\"><div class=\"addBlockTitleText time\">Tijdstip<\/div><div class=\"addBlockTitleLine\"><\/div><\/div><div class=\"addBlockLeft\">Van:<\/div><div class=\"addBlockMiddle\"><div class=\"addManualOptionsContentInput\" style=\"margin-left:3px; width:120px;\"><span class=\"ui-helper-hidden-accessible\"><input type=\"text\"\/><\/span><input when=\"start\" type=\"text\" id=\"dateAddContainerStart\" class=\"addManualOptionsInput dp\" readonly=\"readonly\"><\/div><\/div><div class=\"addBlockLeft\">tot en met:<\/div><div class=\"addBlockMiddle\"><div class=\"addManualOptionsContentInput\" style=\"margin-left:3px; width:120px;\"><input when=\"end\" type=\"text\" id=\"dateAddContainerEnd\" class=\"addManualOptionsInput dp\" readonly=\"readonly\"><\/div><\/div><div class=\"addBlockLeft\">Lesuur:<\/div><div class=\"addBlockMiddle\"><div id=\"addnewSMSCselectHour\" class=\"cf\"><\/div><\/div><div class=\"addBlockTitle\"><div class=\"addBlockTitleText location\">Locatie<\/div><div class=\"addBlockTitleLine\"><\/div><\/div><div class=\"addBlockLeft\">Klaslokaal:<\/div><div class=\"addBlockMiddle\"><div id=\"addnewSMSCselectClassroom\" class=\"cf\"><\/div><\/div><div class=\"addBlockRight\"><div>Kies het klaslokaal of een andere locatie.<\/div><\/div><div class=\"addBlockLeft\" id=\"addBlockLeftLocation\">Locatie:<\/div><div class=\"addBlockMiddle\"><input class=\"addClassroomInput\" id=\"classroomManual\"><\/div><div class=\"addBlockRight\"><div>Schrijf hier de naam van de plaats waar de activiteit doorgaat (optioneel).<\/div><\/div><div class=\"addBlockTitle\"><div class=\"addBlockTitleText description\">Omschrijving<\/div><div class=\"addBlockTitleLine\"><\/div><\/div><div class=\"addBlockLeft\">Titel of vaknaam:<\/div><div class=\"addBlockMiddle\"><div><input class=\"addCourseInput\" id=\"course\"><\/div><\/div><div class=\"addBlockRight\"><div>De titel wordt getoond op de plaats van het bestaande vak.<\/div><\/div><div class=\"addBlockLeft\">Lesonderwerp:<\/div><div class=\"addBlockMiddle subject\"><div><textarea class=\"addSubjectTextarea\" id=\"subject\"><\/textarea><\/div><\/div><div class=\"addBlockRight\"><div id=\"subjectExplain\">Noteer hier het lesonderwerp of de omschrijving van de activiteit.<\/div><\/div><div class=\"addBlockTitle\"><div class=\"addBlockTitleText participant\">Deelnemers<\/div><div class=\"addBlockTitleLine\"><\/div><\/div><div class=\"addBlockLeft\">Klassen:<\/div><div class=\"addBlockMiddle userselect\"><div id=\"addClassesList\" classIDs=\"\" onclick=\"oAdd.showUscPopup('agendaClassesUsc');\">Selecteer klassen<\/div><\/div><div class=\"addBlockRight\"><div>De activiteit verschijnt in de schoolagenda bij deze leerlingen.<\/div><\/div><div class=\"addBlockLeft\">Leerkrachten:<\/div><div class=\"addBlockMiddle userselect\"><div id=\"addTeachersList\" teacherIDs=\"\" onclick=\"oAdd.showUscPopup('agendaUsersUsc');\">Selecteer leerkrachten<\/div><\/div><div class=\"addBlockRight\"><div>De activiteit vervangt de lessen in de schoolagenda bij deze leerkrachten.<\/div><\/div><div class=\"addBlockTitle\"><div class=\"addBlockTitleText options\">Extra opties<\/div><div class=\"addBlockTitleLine\"><\/div><\/div><div class=\"addBlockLeft\"><\/div><div class=\"addBlockMiddle\"><div id=\"addOptionAssignments\" class=\"addOption selected\" onclick=\"oAdd.toggleOption(this);\" status=\"1\">Bestaande taken en toetsen ontkoppelen<\/div><\/div><div class=\"addBlockRight\"><\/div><div class=\"ypSpacer\">&nbsp;<\/div><div class=\"addSubmit smscButton blue\" id=\"addSubmit\" onclick=\"oAdd.checkFields();\">{_ADD_BUTTON_SUBMIT}<\/div><div class=\"ypSpacer\" style=\"height: 5px;\">&nbsp;<\/div><\/div><!-- TAB 2 --><div class=\"addTabContainer\" id=\"addTab2\" style=\"clear:both;\"><div class=\"addManualOptions\"><div class=\"addManualOptionsLeft\"><div class=\"addManualOptionsLeftLeft title\">Filter tijdstip<\/div><div class=\"addManualOptionsLeftRight\"><div class=\"addManualOptionsTitle\">Van:<\/div><div class=\"addManualOptionsContent\"><div class=\"addManualOptionsContentInput\"><input when=\"start\" type=\"text\" id=\"dateListContainerStart\" class=\"addManualOptionsInput dp\" readonly=\"readonly\"><\/div><\/div><\/div><div class=\"addManualOptionsLeftLeft\"><\/div><div class=\"addManualOptionsLeftRight\"><div class=\"addManualOptionsTitle\">Tot en met:<\/div><div class=\"addManualOptionsContent\"><div class=\"addManualOptionsContentInput\"><input when=\"end\" type=\"text\" id=\"dateListContainerEnd\" class=\"addManualOptionsInput dp\" readonly=\"readonly\" ><\/div><\/div><\/div><div class=\"addManualOptionsLeftLeft\"><\/div><div class=\"addManualOptionsLeftRight\"><div class=\"addManualOptionsTitle\">Lesuur:<\/div><div class=\"addManualOptionsContent\" id=\"addSMSCselectHours\"><\/div><\/div><div class=\"addManualOptionsLeftLeft\"><\/div><div class=\"addManualOptionsLeftRight\"><div class=\"addManualOptionsTitle\">{_ADD_CLASSROOM}:<\/div><div class=\"addManualOptionsContent\" id=\"addSMSCselectClassrooms\"><\/div><\/div><\/div><div class=\"addManualOptionsRight\"><div class=\"addManualOptionsRightLeft title\">Filter deelnemers<\/div><div class=\"addManualOptionsRightRight\"><div class=\"addManualOptionsTitle\">Graad:<\/div><div class=\"addManualOptionsContent\" id=\"addSMSCselectGrades\"><\/div><\/div><div class=\"addManualOptionsRightLeft\"><\/div><div class=\"addManualOptionsRightRight\"><div class=\"addManualOptionsTitle\">Klassen:<\/div><div class=\"addManualOptionsContent\" id=\"addSMSCselectClasses\"><\/div><\/div><div class=\"addManualOptionsRightLeft\"><\/div><div class=\"addManualOptionsRightRight\"><div class=\"addManualOptionsTitle\">Leerkrachten:<\/div><div class=\"addManualOptionsContent\" id=\"addSMSCselectTeachers\"><\/div><\/div><div class=\"addManualOptionsRightLeft\"><\/div><div class=\"addManualOptionsRightRight\"><div class=\"addManualOptionsTitle\"><\/div><div class=\"addManualOptionsContent smscButton blue\" onclick=\"oAdd.getCurrentAcitivities();\">{_ADD_SEARCH}<\/div><\/div><\/div><\/div><div class=\"addManualHeader\"><div class=\"addManualRowHeader\"><div class=\"date asc activesort\" type=\"date\" onclick=\"oAdd.toggleOrder(this);\">{_ADD_DATE}<\/div><div class=\"hour desc\" type=\"hour\" onclick=\"oAdd.toggleOrder(this);\">{_ADD_HOUR}<\/div><div class=\"teacher desc\" type=\"teacher\" onclick=\"oAdd.toggleOrder(this);\">{_ADD_TEACHER}<\/div><div class=\"classroom desc\" type=\"classroom\" onclick=\"oAdd.toggleOrder(this);\">{_ADD_CLASSROOM}<\/div><div class=\"klas desc\" type=\"class\" onclick=\"oAdd.toggleOrder(this);\">{_ADD_CLASS}<\/div><div class=\"grade desc\" type=\"grade\" onclick=\"oAdd.toggleOrder(this);\">{_ADD_GRADE}<\/div><div class=\"course desc\" type=\"course\" onclick=\"oAdd.toggleOrder(this);\">{_ADD_COURSE}<\/div><div class=\"edit\"><\/div><div class=\"delete\"><\/div><\/div><\/div><div class=\"addManualList\" id=\"addManualList\"><\/div><div><div id=\"dialog2\" title=\"\"><\/div><div id=\"dialog3\" title=\"\"><\/div><div id=\"dialog4\" title=\"\"><\/div><div id=\"dialog5\" title=\"\"><\/div>","tpl_agenda_admin_add_hour_row":"<div class=\"addHourRow\" hourID=\"{hourID}\" status=\"0\" onclick=\"oAdd.selectHour(this);\">{title} ({start} - {stop})<\/div>","lessonEditFormSubContent":"<div class=\"lessonEditTitle\" id=\"lessonEditTitle\" activeMomentID=\"0\">1. Kies de klas waarvoor u een vervanguur wenst te plannen.<\/div><div class=\"lessonEditSelectTitle\">Klas:<\/div><div class=\"lessonEditClassSelect\" id=\"lessonEditClassSelect\"><\/div><!-- BEGIN _BLOCK_AGENDA_LESSONEDIT_SELECT_CLASS_INFO --><div class=\"lessonEditSelectInfo\">U kunt enkel klassen kiezen waaraan u zelf les geeft.<\/div><!-- END _BLOCK_AGENDA_LESSONEDIT_SELECT_CLASS_INFO --><div class=\"lessonEditViolations\" id=\"lessonEditViolations\"><\/div><div class=\"lessonEditTitle\" id=\"lessonEditTitle\">2. Vervang de geselecteerde lessen door:<\/div><div class=\"lessonEditSelectTitle\">Leerkracht:<\/div><div class=\"lessonEditClassSelect\" id=\"lessonEditTeacherSelect\"><\/div><div class=\"lessonEditSelectTitle\">Vak:<\/div><div class=\"lessonEditClassSelect\" id=\"lessonEditCourseSelect\"><\/div><!-- BEGIN _BLOCK_AGENDA_LESSONEDIT_SELECT_COURSE_INFO --><div class=\"lessonEditSelectInfo\">U kunt enkel vakken kiezen die u zelf in deze klas geeft.<\/div><!-- END _BLOCK_AGENDA_LESSONEDIT_SELECT_COURSE_INFO --><div class=\"lessonEditSelectTitle\">Klaslokaal:<\/div><div class=\"lessonEditClassSelect\" id=\"lessonEditClassroomSelect\"><\/div><div class=\"lessonEditInfo\">Zodra u op 'Opslaan' klikt, wordt de geselecteerde les verwijderd. Het lesonderwerp, taken en toetsen worden ontkoppeld en deze kunnen opnieuw ingepland worden. De leerkracht krijgt een bericht dat de les vervangen werd.<\/div>","tpl_agenda_runWizard":"<div class=\"agendaRunWizardContainer nld\">\n\t<div class=\"agendaRunWizard title\">Laad een uurrooster in<\/div>\n\t<div class=\"agendaRunWizard subtitle\">Probeer de schoolagenda uit met een fictief uurrooster.<\/div>\n\t<div class=\"agendaRunWizard info\">We hebben een fictief uurrooster klaarstaan voor de komende twee weken zodat u snel een idee krijgt van de mogelijkheden.<br><br>Vul een lessenreeks in, maak nota's, plan taken en toetsen ... Met dit uurrooster kunt u experimenteren naar hartelust. Nadien kunt u alle testgegevens verwijderen.<\/div>\n\t<div class=\"agendaRunWizard button\"><button  onclick=\"oGrid.runWizard();\" id=\"runWizardButton\" class=\"runWizardButton smscButton blue\" style=\"line-height:25px;\">Klik hier om een uurrooster in te laden ><\/button><\/div>\n<\/div>","tpl_agenda_exportdialog":"<div class=\"exportdialog-container\"><p>Gebruik de volgende adressen om je lesonderwerpen en deadlines van taken en toetsen te openen in andere toepassingen.<\/p><ul>    <li>Dit zijn de lesonderwerpen van de voorbije week en twee weken in de toekomst.<\/li>    <li>Dit zijn de deadlines van taken en toetsen van de voorbije week en een maand in de toekomst.<\/li><\/ul><p>Je kan het adres kopi\u00ebren en in een agendatoepassing plakken waarin de iCal-indeling wordt ondersteund (Google Calendar, Apple iCal, Outlook ...).<\/p><p class=\"title\">Lesonderwerpen<\/p><p><input type=\"text\" id=\"deeplink-input\" value=\"https:\/\/tsm.smartschool.be\/index.php\/deeplink\/3691\/8f85ce08-1557-4061-8fbf-e071e26c04d8\" readonly=\"readonly\" \/><p><p class=\"title\">Deadlines van taken en toetsen<\/p><p><input type=\"text\" id=\"deeplink-input\" value=\"https:\/\/tsm.smartschool.be\/index.php\/deeplink\/3691\/90d0b75e-e858-4f4c-b537-b792f40e2b42\" readonly=\"readonly\" \/><p><\/div><button class=\"smscButton blue right\">OK<\/button>","tpl_agenda_rightcont_materialslist":"<div class=\"schoolyearContainer\"><div class=\"schoolyearContainerLabel\">Schooljaar:<\/div><select id=\"materialListSchoolyear\"><option value=\"1567288800\"  start=\"2019-09-01\" stop=\"2020-08-31\" >2019-2020<\/option><option value=\"1598911200\"  start=\"2020-09-01\" stop=\"2021-08-31\" >2020-2021<\/option><option value=\"1630447200\"  start=\"2021-09-01\" stop=\"2022-08-31\" >2021-2022<\/option><option value=\"1661983200\"  start=\"2022-09-01\" stop=\"2023-08-31\" selected=\"selected\">2022-2023<\/option><option value=\"1693519200\"  start=\"2023-09-01\" stop=\"2024-08-31\" >2023-2024<\/option><option value=\"1725141600\"  start=\"2024-09-01\" stop=\"2025-08-31\" >2024-2025<\/option><option value=\"1756677600\"  start=\"2025-09-01\" stop=\"2026-08-31\" >2025-2026<\/option><option value=\"1788213600\"  start=\"2026-09-01\" stop=\"2027-08-31\" >2026-2027<\/option><option value=\"1819749600\"  start=\"2027-09-01\" stop=\"2028-08-31\" >2027-2028<\/option><\/select><\/div><div class=\"datesContainer\"><div class=\"dateContainer\"><div class=\"dateContainerLabel\">Vanaf:<\/div><input type=\"text\" id=\"materialListStartDate\" \/><\/div><div class=\"dateContainer\"><div class=\"dateContainerLabel\">Tot en met:<\/div><input type=\"text\" id=\"materialListEndDate\" \/><\/div><\/div><div class=\"lessonContainer\" id=\"lessonContainer\"><div class=\"lessonListTitle\">Mijn vakken:<\/div><div id=\"lessonListMaterialContainerOwnCourses\" class=\"lessonListContainer loading\"><\/div><\/div><div class=\"optionsContainer\" id=\"optionsContainer\"><div class=\"lessonListTitle\">Opties:<\/div><div class=\"lessonListRow\" id=\"lessonListOptionMarked\" status=\"0\" onclick=\"oGrid.toggleOption(this);\" title=\"Toon enkel gemarkeerde items\">Toon enkel gemarkeerde items<\/div><\/div><div class='listButtonContainer'><button id=\"selectionRightContainerButton\" class=\"selectionContainerButton smscButton blue\">Toon selectie<\/button><\/div>","tpl_agenda_rightcont_lessonslist":"<div class=\"schoolyearContainer\"><div class=\"schoolyearContainerLabel\">Schooljaar:<\/div><select id=\"lessonListSchoolyear\"><option value=\"1567288800\"  start=\"2019-09-01\" stop=\"2020-08-31\" >2019-2020<\/option><option value=\"1598911200\"  start=\"2020-09-01\" stop=\"2021-08-31\" >2020-2021<\/option><option value=\"1630447200\"  start=\"2021-09-01\" stop=\"2022-08-31\" >2021-2022<\/option><option value=\"1661983200\"  start=\"2022-09-01\" stop=\"2023-08-31\" selected=\"selected\">2022-2023<\/option><option value=\"1693519200\"  start=\"2023-09-01\" stop=\"2024-08-31\" >2023-2024<\/option><option value=\"1725141600\"  start=\"2024-09-01\" stop=\"2025-08-31\" >2024-2025<\/option><option value=\"1756677600\"  start=\"2025-09-01\" stop=\"2026-08-31\" >2025-2026<\/option><option value=\"1788213600\"  start=\"2026-09-01\" stop=\"2027-08-31\" >2026-2027<\/option><option value=\"1819749600\"  start=\"2027-09-01\" stop=\"2028-08-31\" >2027-2028<\/option><\/select><\/div><div class=\"datesContainer\"><div class=\"dateContainer\"><div class=\"dateContainerLabel\">Vanaf:<\/div><input type=\"text\" id=\"lessonListStartDate\" \/><\/div><div class=\"dateContainer\"><div class=\"dateContainerLabel\">Tot en met:<\/div><input type=\"text\" id=\"lessonListEndDate\" \/><\/div><\/div><div class=\"lessonContainer\" id=\"lessonContainer\"><div class=\"lessonListTitle\">Mijn vakken:<\/div><div id=\"lessonListContainerOwnCourses\" class=\"lessonListContainer loading\"><\/div><\/div><div class='listButtonContainer'><button id=\"selectionContainerButton\" class=\"selectionContainerButton smscButton blue\">Toon selectie<\/button><\/div>"}});$.extend(true, SMSC, { vars : {"hideStartEndHour":false,"locale":"nld","lng":{"tasksAndMaterials":{"tasksAndMaterials_container_title":"Toon toekomstige:","tasksAndMaterials_tasks_toggle":"Taken\/Toetsen","tasksAndMaterials_materials_toggle":"Lesmateriaal","tasksAndMaterials_none_found":"Er werden geen items gevonden.","tasksAndMaterials_choose_filter":"Kies bovenaan om Taken\/Toetsen en\/of <br \/> Lesmateriaal te tonen.","tasksAndMaterials_download_wopi":"Downloaden","_AGENDA_SHOW_INFO_NO_CONTENT_FOR_STUDENT":"Er is geen inhoud voor deze les beschikbaar voor jou."},"polpo_chooser":{"lng_polpo_chooser_title":"Maak uw keuze","lng_polpo_chooser_ok_button":"Selectie toevoegen","lng_polpo_chooser_empty_state":"Er werden geen POLPO-bundels gevonden"}},"scoodleAccessToken":"gAEAAIBEfq5AoScKmQpCEdg_duSDBSfT-9sOZ2G7S5lhD9Dn95mmYRduqJrmEod7ijPbRcJ24JecbOoWeJZxNbXuVhYvy8zFc6TkY8ASOE4YbazQGM9LM3rXNj83DJlxkaUu_1ZZdO30Plg4RMYL4qBCXzotO47NsTQaSU6PgWg-v-A10bJUpp6tyRRaHKpWEc9Bvt5wi9v4m-WB6KAeQxo3d2mvMkD3Bsp69gbbs8WW5KiyB9tJns29vKseHr71lY7jD0eX7t2jVxYOOPfwxzd_1-MJgh4OTLZSdd0U529thMg_yJZrCs1aQ-OOkPeKyjYr-2szHcYWLwdID5_RZBxlXrdWFp7NgVe9lD4llYFMAY1HdPxqE3jcI8IILit3Q683NM9FamAsvP3fmSXeX8VCOnzlveLdfsibIuBcWLhfIoXN0HCqeR2YgBWgVgZg0nxO5Q6peHYIgZgZbg5LvEpIVfwdWmP-qyqoLVHUqGXE3xw69T44I_hivQn3pkQ0vDbJbzQCAACAAQAACGN0plWZPX2ndTJSgVFPGuuwnqiLMrWBWiaVEHPWexKzo9eXUGsrOje3ZD8REFutGYahIrwZ16TQCGzypkykxgH0MGLmk_QLg6U0HZjCwEknL22CL_YXPY7pla_L1UL7cMjafVWxALHMtW9LVAS3LnCzIKxs_WFzXLt-UOoV5OXadzvpShDIvYFktGUjAh0EK_GJJQSS1S3FTYlfW9O1m9tsVPULGfFq0eYdq2SBkPGaSJoDcw53V6RjLQGyCnaWqMIgM-hNKiPiGEJp21EBQp-RGHGV7lD7RIsuosiD7YADnKLlQm2CjMDaiWuDU61dURahzxms1n8avw4wOqEuqJjBHn0QPqb14T7yxT5fTlqwrhkTaAOYL4m-MPFnre5mymGIDNGjveWL_iLj0F8BMye5SmBnUSxwGAiVw0ox_zdXBAYroVB27WJzOsKkl1ry5ElxhOxoy14kijZeXVTkdwsQsaPW0PVI6EPdMUumRm6U8-vNeDdHEPJNlGRXNm97a7O9DJo1DHNK2K-Z7xckgrSgdKh3Wlu_Y2F29UuxrkoMGVF5mGSqxJJn1Q9Fp6RNRUCo4soCTDARvxeYDqHbKrHhvt5XJqx1Pvo2K6ijOTfDBBJyQ6aAhFeFP2o3cYTtAcBZmnymlAowTVjVKW3PFGBCIlWIrKD-OnKvk3lJyzg-Tcd_N7yhW07m0g33dlm3aGJstJOwXbhiLStrxlmSvcJWve4PgYhQb5vFnrlUYfU","type_chooser_menu":[{"class":"typechooser__tile course","label":"Mijn vakken","type":"tile","trigger":"courses"},{"class":"typechooser__tile polpo","label":"POLPO","type":"tile","trigger":"polpo"},{"class":"typechooser__tile scoodle","label":"Scoodle","type":"tile","trigger":"scoodle"}]}});</script>
+    
+                                <script type="text/javascript">$.extend(true, SMSC, JSON.parse('\u007B\u0022topnav\u0022\u003A\u007B\u0022lang\u0022\u003A\u007B\u0022badge\u0022\u003A\u007B\u0022badge_unread_notifs\u0022\u003A\u0022Ongelezen\u0020meldingen\u0022\u007D,\u0022courses\u0022\u003A\u007B\u0022courses_menu_title\u0022\u003A\u0022Vakken\u0022,\u0022courses_menu_search_placeholder\u0022\u003A\u0022Zoek\u0020naar\u0020een\u0020vak\u0022,\u0022courses_menu_no_courses\u0022\u003A\u0022Geen\u0020vakken\u0020gevonden\u0022\u007D,\u0022filter\u0022\u003A\u007B\u0022filter_sections_communication\u0022\u003A\u0022Communicatie\u0022,\u0022filter_sections_files\u0022\u003A\u0022Bestanden\u0022,\u0022filter_sections_mycourses\u0022\u003A\u0022Vakken\u0022,\u0022filter_sections_others\u0022\u003A\u0022Anderen\u0022,\u0022filter_options_sort_filter\u0022\u003A\u0022Sorteren\u0020en\u0020filteren\u0022,\u0022filter_filter_sort\u0022\u003A\u0022Sortering\u0022,\u0022filter_filter_bydate\u0022\u003A\u0022Filter\u0020op\u0020periode\u0022\u007D,\u0022go\u0022\u003A\u007B\u0022link.go.name\u0022\u003A\u0022GO\u0021\u0022,\u0022link.go_pro.name\u0022\u003A\u0022GO\u0021\u0020pro\u0022,\u0022link.go_training.name\u0022\u003A\u0022GO\u0021\u0020ondersteuningsaanbod\u0022,\u0022link.go_parents.name\u0022\u003A\u0022GO\u0021\u0020ouders\u0022,\u0022link.go_clb.name\u0022\u003A\u0022GO\u0021\u0020CLB\u0022,\u0022link.go_pro_curricula.name\u0022\u003A\u0022GO\u0021\u0020pro\u0020leerplannen\u0022,\u0022courses_menu_title\u0022\u003A\u0022Mijn\u0020virtuele\u0020ruimtes\u0022,\u0022link_menu_title\u0022\u003A\u0022Snel\u0020naar\u0022,\u0022curriculum_menu_title\u0022\u003A\u0022GO\u0021\u0020leerplannen\u0022,\u0022link_virtualSpace\u0022\u003A\u0022Op\u0020virtuele\u0020ruimtes\u0020van\u0020het\u0020GO\u0021\u0020abonneren\u0022\u007D,\u0022notifications\u0022\u003A\u007B\u0022notifs_placeholder\u0022\u003A\u0022Er\u0020zijn\u0020geen\u0020meldingen.\u0020Je\u0020bent\u0020volledig\u0020up\u002Dto\u002Ddate\u0021\u0022,\u0022notifs_toggle\u0022\u003A\u0022Nieuwe\u0020meldingen\u0020tonen\u0020als\u0020pop\u002Dup\u0022,\u0022notifs_toggle_on\u0022\u003A\u0022Aan\u0022,\u0022notifs_toggle_off\u0022\u003A\u0022Uit\u0022,\u0022notifs_settings\u0022\u003A\u0022Instellingen\u0022,\u0022notifs_clear\u0022\u003A\u0022Alles\u0020wissen\u0022,\u0022notifs_error\u0022\u003A\u0022Het\u0020ophalen\u0020van\u0020de\u0020meldingen\u0020is\u0020mislukt.\u0020Vernieuw\u0020de\u0020pagina\u0020en\u0020probeer\u0020opnieuw.\u0022\u007D,\u0022notification\u0022\u003A\u007B\u0022notif_mark_as_read\u0022\u003A\u0022Uit\u0020de\u0020lijst\u0020verwijderen\u0022\u007D,\u0022profile\u0022\u003A\u007B\u0022profile_img_alt\u0022\u003A\u0022Profiel\u0020afbeelding\u0022\u007D,\u0022search\u0022\u003A\u007B\u0022search_input_placeholder\u0022\u003A\u0022Zoeken\u0022,\u0022search_results_placeholder\u0022\u003A\u0022Waar\u0020ben\u0020je\u0020naar\u0020op\u0020zoek\u003F\u0022,\u0022search_more_results\u0022\u003A\u0022Toon\u0020meer\u0020resultaten\u0022,\u0022search_no_results\u0022\u003A\u0022Er\u0020werden\u0020geen\u0020resultaten\u0020gevonden.\u0022,\u0022search_searching\u0022\u003A\u0022Bezig\u0020met\u0020zoeken\u0020...\u0022,\u0022search_info\u0022\u003A\u0022Geef\u0020een\u0020zoekterm\u0020in\u0020en\u0020druk\u0020op\u0020enter\u0020om\u0020te\u0020zoeken.\u0022,\u0022search_from\u0022\u003A\u0022van\u0022,\u0022search_to\u0022\u003A\u0022naar\u0022,\u0022search_module_persons\u0022\u003A\u0022Personen\u0022,\u0022search_time_all\u0022\u003A\u0022Toon\u0020alles\u0022,\u0022search_time_today\u0022\u003A\u0022Vandaag\u0022,\u0022search_time_last_7_days\u0022\u003A\u0022Deze\u0020week\u0022,\u0022search_time_last_30_days\u0022\u003A\u0022Deze\u0020maand\u0022,\u0022search_time_current_schoolyear\u0022\u003A\u0022Dit\u0020schooljaar\u0022,\u0022search_checkbox_own_platform\u0022\u003A\u0022Enkel\u0020in\u0020eigen\u0020platform\u0020zoeken\u0022\u007D,\u0022toast\u0022\u003A\u007B\u0022toast_close\u0022\u003A\u0022Sluiten\u0022\u007D,\u0022toaster\u0022\u003A\u007B\u0022toaster_sessionextender_title\u0022\u003A\u0022Wilt\u0020u\u0020aangemeld\u0020blijven\u003F\u0022,\u0022toaster_sessionextender_description\u0022\u003A\u0022U\u0020wordt\u0020automatisch\u0020afgemeld\u0020binnen\u0020___id___\u0020seconden.\u0022,\u0022toaster_sessionextender_button\u0022\u003A\u0022OK\u0022\u007D\u007D\u007D\u007D'));</script>
+
+            <!-- Javascript_Topnav -->
+                                        <script type="text/javascript" src="https://static6.smart-school.net/production/Topnav/main.rev-817040770a.js"></script>
+    
+                            <!-- Javascript_Body_Urls -->
+                                <script type="text/javascript" src="https://static2.smart-school.net/modules/Agenda/dist/main-built.rev-e76b3b0234.js"></script>
+            <script type="text/javascript" src="https://static4.smart-school.net/smsc/resources/requirejs/2.3.3/require.min.rev-e6af601a16.js"></script>
+            <script type="text/javascript" src="https://static4.smart-school.net/modules/Agenda/desktop/main/dist/main-built.rev-6376dd0b56.js"></script>
+    
+                <!-- Javascript_requirejs_Urls -->
+                        
+        		<!-- Javascript_legacy_stealjs_Urls -->
+                        
+                
+        <!-- Javascript_symfony -->
+                                </body>
+</html>

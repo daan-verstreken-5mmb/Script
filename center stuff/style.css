@@ -1,0 +1,18 @@
+/* This wille center tect/inline contenct in a block element */
+h2{
+    text-align: center;
+}
+
+section p{
+    width: 50%;
+    margin: auto;
+    background-color: aquamarine;
+}
+  
+article p{
+    height: 40vh;
+    width: 50%;
+    background-color: aqua;
+    margin: auto;
+    
+}

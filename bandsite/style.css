@@ -1,0 +1,43 @@
+body{
+    background-image: url(http://jornalismojunior.com.br/wp-content/uploads/2019/03/pasted-image-0-2-1024x641.png);
+}
+
+h1{
+    color: blue;
+    font-family: sans-serif;
+}
+
+h2{
+    color: white;
+    font-family: sans-serif;
+}
+
+footer{
+    color: white;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(41, 41, 41);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
