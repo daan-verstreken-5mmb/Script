@@ -1,0 +1,28 @@
+body{
+    background-image: url(https://images.pexels.com/photos/4457409/pexels-photo-4457409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    
+}
+
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    width: 20%;
+    color: rgb(70, 78, 75);
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 150%;
+    margin: auto;
+    width: 5%;
+    color: rgb(70, 78, 75);
+}
+
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    width: 9%;
+    color: rgb(70, 78, 75);
+}
+
