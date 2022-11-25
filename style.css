@@ -1,3 +1,9 @@
+header{
+    background-color: azure;
+    background-size: cover;
+    background-position: center;
+}
+
 body{
     background-image: url(https://images.pexels.com/photos/4457409/pexels-photo-4457409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     
@@ -9,6 +15,8 @@ h1{
     margin: auto;
     width: 20%;
     color: rgb(70, 78, 75);
+    text-align: center;
+    
 }
 
 h2{
@@ -24,5 +32,9 @@ h3{
     margin: auto;
     width: 9%;
     color: rgb(70, 78, 75);
+}
+#flexbox {
+    display: flex;
+    border: 2px solid black;
 }
 
