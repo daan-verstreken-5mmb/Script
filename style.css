@@ -38,3 +38,7 @@ h3{
     border: 2px solid black;
 }
 
+p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
