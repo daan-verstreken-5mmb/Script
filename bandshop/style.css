@@ -50,4 +50,6 @@ body {
     a{    
     font-size: 130%;
     padding: 10px;
+    text-decoration: none;
+    color: black;
     }
