@@ -1,12 +1,9 @@
-/*intellingen vormgeving*/
 body {
     background-color: rgb(253, 253, 253);
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     
-    
-    /*vormgeving klasses*/
     .flex-container {
     display: flex;
     justify-content: space-between;
@@ -90,3 +87,5 @@ body {
         font-size: 170%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+
+    
