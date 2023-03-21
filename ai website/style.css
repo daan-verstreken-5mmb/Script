@@ -56,7 +56,7 @@ header {
   .hero button {
     padding: 10px 20px;
     background-color: rgb(93, 0, 255);
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     font-size: 1.2em;
@@ -83,7 +83,7 @@ header {
     margin-left: 20px;
     font-size: 1.5em;
     text-decoration: none;
-    color: #333;
+    color: #cd1818;
     }
 
     h1{
