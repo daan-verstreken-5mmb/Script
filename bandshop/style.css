@@ -2,119 +2,184 @@ body {
     background-color: rgb(253, 253, 253);
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    
-    .flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
-    
-    .logo {
-    width: 12rem;
-    }
-    
-    img {
+}
+
+img {
     width: 100%;
-    }
-    
-    header {
+}
+
+video {
+    width: 100%;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-size: 200%;
+}
+
+h3 {
+    padding-left: 10%;
+    font-size: 170%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h5 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 180%
+}
+
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+
+}
+
+section {
+    margin-bottom: 5rem;
+}
+
+header {
     width: 100%;
     padding: 10px;
     background-color: rgb(196, 195, 193);
-    }
-    
-    * {
+}
+
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    }
-    
-    header input {
+}
+
+header input {
     background-color: azure;
-    }
-    
-    header i {
+}
+
+header i {
     margin-left: 20px;
     font-size: medium;
-    }
-    
-    header nav li {
+}
+
+header nav li {
     display: inline-block;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
+}
 
-    header a{    
+header a {
     font-size: 130%;
     padding: 10px;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    }
+}
 
-    .videoframe {
-        overflow: hidden;
-        margin-bottom: 3rem;
-        max-height: 100vh;
-        padding-top: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    
-    video {
-        width: 100%;
-    }
+p {
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    font-size: 160%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
 
-    .flex-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-    }
-    
-    .flex-item {
-        flex: 1;
-    }
+footer {
+    padding: 5vw 10vw;
+    background-color: #111;
+    color: #666;
+}
 
-    p{
-        padding-right: 10%;
-        padding-bottom: 10%;
-        padding-left: 10%;
-        font-size: 160%;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
+footer .flex-container:first-child {
+    margin-bottom: 2rem;
+}
 
-    h3{
-        padding-left: 10%;
-        font-size: 170%;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+footer ul li {
+    font-size: 0.8rem;
+    line-height: 2;
+    list-style-type: none;
+}
 
-    footer {
-        padding: 5vw 10vw;
-        background-color: #111;
-        color: #666;
-    }
-    
-    footer .flex-container:first-child {
-        margin-bottom: 2rem;
-    }
-    
-    footer ul li {
-        font-size: 0.8rem;
-        line-height: 2;
-        list-style-type: none;
-    }
-    
-    footer ul li:first-child a {
-        color: #fff;
-        font-size: 1rem;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
+footer ul li:first-child a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
-    footer a{
+footer a {
     font-size: 110%;
     padding: 10px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    }
-    
+}
+
+.videoframe {
+    overflow: hidden;
+    margin-bottom: 3rem;
+    max-height: 100vh;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.bgc-perfection {
+    background-color: rgb(81, 81, 81);
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(123, 123, 123);
+}
+
+.button1:hover {
+    background-color: rgb(123, 123, 123);
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(123, 123, 123);
+}
+
+.button2:hover {
+    background-color: rgb(123, 123, 123);
+    color: white;
+}
