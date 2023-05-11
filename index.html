@@ -1,40 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Hompage Daan Verstreken</title>
+    <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:100,300,400,700,900|Cormorant+Garamond:300,400,500,700|Lato:100,300|Montserrat: 300, 400, 700|Open+Sans|Oswald|PT+Sans+Narrow|Roboto+Condensed|Ubuntu|Voltaire|Slabo+27px|Droid+Sans+Mono|Vidaloka|Raleway:400,700,900" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <header>
-        <h1>Daan Verstreken TSM</h1>
-      </header>
 
-      <main>
-        <section id="flexbox">
-          <div class="col left">
-            <h2>Over mij!</h2>
-            <p>Hey, ik ben Daan Verstreken. </p>
-            <p>Ik ben Daan en zit in het 5 de jaar multimedia</p>
-            <p>Ik speel basket en ski graag</p>
+<body class="loading">
+  <div class="preloader">
+  </div>
+  <div class="menu">
+    <nav>
+      <a href="#" id="one" style="color:#000">Home</a>
+      <a href="#" id="two" style="color:#555">Werk</a>
+      <a href="#" id="three" style="color:#555">Projects</a>
+    </nav>
+  </div>
+  <div id="fullpage">
+    <div class="section active" id="section1">
+      <canvas id="c"></canvas>
+      <h1 class="logo">Daan</h1>
+      <div class="scroll">
+        <span id="scroll_line"></span>
+
+        <p id="scroll_text">Scroll</p>
+
+      </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="about_container">
+          <div class="about_header">
+            S
           </div>
-          <div class="col right">
-            <h2>Mijn pagina's!</h2>
-            <p>Hieronder ontdek je al mijn websites.</p>
-            <ul>
-              <li><a href="Daan Verstreken-artiekel/" target="_blank">Artikel</a></li>
-              <li><a href="Daan_Verstreken-MatchApp/" target="_blank">Matchapp</a></li>
-              <li><a href="artiestsite/" target="_blank">Bandsite</a></li>
-              <li><a href="bandshop/" target="_blank">bandshop</a></li>
-              <li><a href="huisstijlsite/" target="_blank">Platenlabel</a></li>
-            </ul>
+          <div class="about_text">
+            Ik Ben Daan Verstreken 16 Jaar oud en zit in 5 Multimedia op TSM in Mechelen
           </div>
-        </section>
-      </main>
-      <footer>
-      <p><a href="https://daan-verstreken-5mmb.github.io/Script/" target="_blank">Daan-Verstreken-5MMB op GitHub</a></p>
-      </footer>
-      <link rel="stylesheet" href="style.css">
+        </div>
+        <div class="section_header">
+        <h1 style="color: #222;">Over.</h1>
+        <h2 style="color: #222;">Daan Verstreken</h1>
+      </div>
+    </div>
+    <div class="section" id="section3">
+  
+      <span id="line_left"></span>
+      <span id="line_right"></span>
+   
+    <div class="slide active" id="slide1">
+      <div class="skills_html">
+        <p>html</p>
+      </div>
+    </div>
+   
+    <div class="slide" id="slide2">
+      <div class="skills_css">
+        <div class="spinner">
+          <div class="cube1"></div>
+          <div class="cube2"></div>
+        </div>
+        <p>css</p>
+      </div>
+    </div>
+
+    <div class="slide" id="slide3">
+
+      <div class="skills_svg">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000.000000 1000.000000" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,1000.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="#000000" stroke-width="70px">
+            <path id="s" stroke-dasharray="11790.3525390625" stroke-dashoffset="11790.3525390625"
+            d="M1960 6809 c-86 -13 -217 -59 -287 -100 -32 -19 -90 -66 -129 -105
+            -58 -57 -81 -90 -117 -165 -58 -120 -77 -208 -77 -352 0 -187 39 -302 151
+            -443 104 -132 257 -219 579 -334 226 -80 333 -136 426 -223 105 -98 137 -166
+            142 -303 6 -160 -29 -255 -132 -352 -97 -92 -237 -142 -395 -142 -212 1 -380
+            75 -592 262 l-91 80 -99 -98 c-54 -54 -99 -105 -99 -112 0 -22 161 -176 240
+            -229 205 -137 463 -223 670 -223 91 0 241 27 332 60 232 84 418 284 479 517
+            29 108 29 297 1 405 -49 183 -166 333 -364 465 -112 74 -226 127 -487 225
+            -208 77 -272 110 -334 173 -65 65 -89 123 -95 227 -5 106 18 194 76 283 85
+            132 204 182 413 172 162 -7 286 -53 423 -156 l65 -50 91 114 c49 63 90 118 90
+            123 0 10 -113 96 -194 147 -142 90 -297 134 -491 140 -71 2 -159 -1 -195 -6z"/>
+            <path id="v" stroke-dasharray="11711.0146484375" stroke-dashoffset="11711.0146484375"
+            d="M3520 6795 c0 -3 56 -137 124 -298 68 -160 343 -809 611 -1442 268
+            -632 491 -1157 495 -1165 7 -12 10 -10 18 10 11 27 771 1822 1044 2465 94 220
+            172 408 175 418 5 16 -7 17 -159 17 l-164 0 -437 -1032 c-240 -568 -444 -1060
+            -453 -1093 l-17 -60 -31 95 c-25 73 -465 1123 -843 2008 l-35 82 -164 0 c-90
+            0 -164 -2 -164 -5z"/>
+            <path id="g" stroke-dasharray="13691.080078125" stroke-dashoffset="13691.080078125"
+            d="M7685 6819 c-477 -66 -893 -366 -1100 -795 -53 -108 -97 -237 -122
+            -354 -26 -120 -26 -430 0 -550 122 -571 545 -999 1112 -1126 112 -25 391 -30
+            517 -9 127 21 278 70 403 130 l95 45 0 443 c0 273 -4 456 -10 479 -16 56 -53
+            94 -104 107 -28 7 -154 11 -335 11 l-291 0 0 -160 0 -160 185 0 c172 0 186 -1
+            205 -20 19 -19 20 -33 20 -264 l0 -244 -47 -16 c-260 -85 -554 -68 -799 48
+            -125 59 -203 114 -307 215 -389 379 -448 967 -141 1428 109 164 268 299 456
+            388 136 64 236 87 403 93 200 6 350 -25 517 -109 32 -16 62 -29 67 -29 11 0
+            181 242 181 257 0 28 -283 141 -435 174 -106 23 -362 33 -470 18z"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    
+    <div class="slide" id="slide4">
+      <div class="skills_jq">
+
+            <div id="particles-js"></div>
+
+        <p>Javascript</p>
+      </div>
+    </div>
+    
+    <div class="section_header">
+      <h1 style="color: #222; z-index: 50">Skills.</h1>
+      <h2 style="color: #222; z-index: 50">HTML, CSS.</h1>
+    </div>
+  </div>
+    
+  <div class="section" id="section4">
+      
+    <a href="#">daan-verstreken-5mmb</a>
+    <li><a href="Daan Verstreken-artiekel/" target="_blank">Artikel</a></li>
+    <li><a href="Daan_Verstreken-MatchApp/" target="_blank">Matchapp</a></li>
+    <li><a href="artiestsite/" target="_blank">Bandsite</a></li>
+    <li><a href="bandshop/" target="_blank">bandshop</a></li>
+    <li><a href="huisstijlsite/" target="_blank">Platenlabel</a></li>
+    
+    <div class="section_header">
+      <h1 style="color: #222; z-index: 50">Richting.</h1>
+      <h2 style="color: #222; z-index: 50">Multimedia</h1>
+    </div>
+      
+    </div>
+</div>
+   
+</body>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+<script src='http://matthew.wagerfield.com/parallax/deploy/jquery.parallax.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
